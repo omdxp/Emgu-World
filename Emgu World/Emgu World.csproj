@@ -65,6 +65,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CannyParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CannyParameters.Designer.cs">
+      <DependentUpon>CannyParameters.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +108,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>usersDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CannyParameters.resx">
+      <DependentUpon>CannyParameters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
