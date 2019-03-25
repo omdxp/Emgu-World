@@ -16,6 +16,7 @@ namespace Emgu_World
 {
     public partial class Home : MetroForm
     {
+        // Attributes
         string userName, password;
         Hello hello;
         OleDbConnection connection;
@@ -30,60 +31,88 @@ namespace Emgu_World
 
         private void Home_Load(object sender, EventArgs e)
         {
-            connection = new OleDbConnection();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.GetFullPath("../../users.mdb");
-            connection.Open();
+            try
+            {
+                connection = new OleDbConnection();
+                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.GetFullPath("../../users.mdb");
+                connection.Open();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
-            if (MetroMessageBox.Show(this, "\nAre you sure to close this?", "Emgu World", 
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Hand)==DialogResult.Yes)
+            try
             {
-                Application.ExitThread();
+                if (MetroMessageBox.Show(this, "\nAre you sure to close this?", "Emgu World",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Hand) == DialogResult.Yes)
+                {
+                    Application.ExitThread();
+                }
+            }
+            catch (Exception)
+            {
+                
             }
         }
 
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing && MetroMessageBox.Show(this, "\nAre you sure to quit?", "Emgu World",
+            try
+            {
+                if (e.CloseReason == CloseReason.UserClosing && MetroMessageBox.Show(this, "\nAre you sure to quit?", "Emgu World",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Hand) == DialogResult.Yes)
-            {
-                Application.ExitThread();
+                {
+                    Application.ExitThread();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
             }
-            else
+            catch (Exception)
             {
-                e.Cancel = true;
+                
             }
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            userName = metroTextBox1.Text;
-            password = metroTextBox2.Text;
-            hello = new Hello();
-
-            cmd = new OleDbCommand("select username,password from users where username='" +
-                userName + "'and password='" + password + "'", connection);
-
-            dataAdapter = new OleDbDataAdapter(cmd);
-
-            dataTable = new DataTable();
-
-            dataAdapter.Fill(dataTable);
-            if (dataTable.Rows.Count > 0)
+            try
             {
-                hello.Show();
-                connection.Close();
-                Hide();
+                userName = metroTextBox1.Text;
+                password = metroTextBox2.Text;
+                hello = new Hello();
+
+                cmd = new OleDbCommand("select username,password from users where username='" +
+                    userName + "'and password='" + password + "'", connection);
+
+                dataAdapter = new OleDbDataAdapter(cmd);
+
+                dataTable = new DataTable();
+
+                dataAdapter.Fill(dataTable);
+                if (dataTable.Rows.Count > 0)
+                {
+                    hello.Show();
+                    connection.Close();
+                    Hide();
+                }
+                else
+                {
+                    MetroMessageBox.Show(this, "\nInvalid Access", "Emgu World",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Hand);
+                }
             }
-            else
+            catch (Exception)
             {
-                MetroMessageBox.Show(this, "\nInvalid Access", "Emgu World",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Hand);
+                
             }
         }
     }

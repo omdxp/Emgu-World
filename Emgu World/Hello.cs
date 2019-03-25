@@ -26,129 +26,152 @@ namespace Emgu_World
 
         private async void SlideShow_Load(object sender, EventArgs e)
         {
-            string[] fileNames = Directory.GetFiles(Path.GetFullPath("../../Slides"));
-            List<Image<Bgr, byte>> listImages = new List<Image<Bgr, byte>>();
-
-            foreach (var file in fileNames)
+            try
             {
-                listImages.Add(new Image<Bgr, byte>(file));
-            }
+                string[] fileNames = Directory.GetFiles(Path.GetFullPath("../../Slides"));
+                List<Image<Bgr, byte>> listImages = new List<Image<Bgr, byte>>();
 
-            while (true)
-            {
-                for (int i = 0; i < listImages.Count - 1; i++)
+                foreach (var file in fileNames)
                 {
-                    for (double alpha = .0; alpha < 1.0; alpha += .01)
+                    listImages.Add(new Image<Bgr, byte>(file));
+                }
+
+                while (true)
+                {
+                    for (int i = 0; i < listImages.Count - 1; i++)
                     {
-                        slidesPicBox.Image = listImages[i + 1].AddWeighted(listImages[i], alpha, (1 - alpha), 0).Bitmap;
-                        await Task.Delay(25);
+                        for (double alpha = .0; alpha < 1.0; alpha += .01)
+                        {
+                            slidesPicBox.Image = listImages[i + 1].AddWeighted(listImages[i], alpha, (1 - alpha), 0).Bitmap;
+                            await Task.Delay(25);
+                        }
                     }
                 }
             }
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton7_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroButton8_Click(object sender, EventArgs e)
-        {
-            
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void edgeDetectionTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(0);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(0);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+               
+            }
         }
 
         private void imageBinrizationTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(1);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(1);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void imageHistogramTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(2);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(2);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void morphologyTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(3);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(3);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            } 
         }
 
         private void shapeDetectionTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(4);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(4);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void textDetectionTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(5);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(5);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
 
         private void faceDetectionTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(6);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(6);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }   
         }
 
         private void handGestureTile_Click(object sender, EventArgs e)
         {
-            menu = new Menu();
-            menu.ChangeTab(7);
-            menu.Show();
-            Close();
+            try
+            {
+                menu = new Menu();
+                menu.ChangeTab(7);
+                menu.Show();
+                Close();
+            }
+            catch (Exception)
+            {
+                
+            }
         }
     }
 }

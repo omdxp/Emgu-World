@@ -169,6 +169,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Dtafalonso-Android-Lollipop-Earth.ico" />
+    <Content Include="joseph-barrientos-49318-unsplash.jpg" />
     <Content Include="LBPcascade classifiers\lbpcascade_frontalface.xml" />
     <Content Include="msvcp140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

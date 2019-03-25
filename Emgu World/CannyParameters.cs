@@ -27,7 +27,8 @@ namespace Emgu_World
 
         private void CannyParameters_Load(object sender, EventArgs e)
         {
-            
+            metroTrackBar1.Value = (int) _menu.GetThresh();
+            metroTrackBar2.Value = (int) _menu.GetThreshLink();
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
