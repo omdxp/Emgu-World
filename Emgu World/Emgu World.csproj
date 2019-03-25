@@ -51,6 +51,9 @@
     <ApplicationIcon>Dtafalonso-Android-Lollipop-Earth.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv-windesktop 3.4.3.3016\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Emgu.CV.World">
       <HintPath>..\..\..\..\..\..\Emgu\emgucv-windesktop 3.4.3.3016\bin\Emgu.CV.World.dll</HintPath>
     </Reference>
@@ -165,6 +168,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Dtafalonso-Android-Lollipop-Earth.ico" />
+    <Content Include="LBPcascade classifiers\lbpcascade_frontalface.xml" />
     <Content Include="msvcp140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

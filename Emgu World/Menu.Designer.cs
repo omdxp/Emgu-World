@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.ed_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.ed_detectEdgeButt = new MetroFramework.Controls.MetroButton();
             this.ed_imgOutputPicBox = new System.Windows.Forms.PictureBox();
             this.ed_imgInputPicBox = new System.Windows.Forms.PictureBox();
@@ -45,18 +46,22 @@
             this.creatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.ib_binarizeButt = new MetroFramework.Controls.MetroButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ib_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.ib_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem43 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem44 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.ih_blueRadioButt = new MetroFramework.Controls.MetroRadioButton();
+            this.ih_greenRadioButt = new MetroFramework.Controls.MetroRadioButton();
+            this.ih_redRadioButt = new MetroFramework.Controls.MetroRadioButton();
+            this.histogramBox = new Emgu.CV.UI.HistogramBox();
+            this.ih_histogramButt = new MetroFramework.Controls.MetroButton();
+            this.ih_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,16 +70,29 @@
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.m_erodeOnBinaryButt = new MetroFramework.Controls.MetroButton();
+            this.m_dilateOnBinaryButt = new MetroFramework.Controls.MetroButton();
+            this.m_blackHatButt = new MetroFramework.Controls.MetroButton();
+            this.m_topHatButt = new MetroFramework.Controls.MetroButton();
+            this.m_gradientButt = new MetroFramework.Controls.MetroButton();
+            this.m_closeButt = new MetroFramework.Controls.MetroButton();
+            this.m_openButt = new MetroFramework.Controls.MetroButton();
+            this.m_dilationButt = new MetroFramework.Controls.MetroButton();
+            this.m_erosionButt = new MetroFramework.Controls.MetroButton();
+            this.m_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.m_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem17 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.sd_stopCameraButt = new MetroFramework.Controls.MetroButton();
+            this.sd_DetectShapeButt = new MetroFramework.Controls.MetroButton();
+            this.sd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.sd_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip5 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,6 +103,10 @@
             this.toolStripMenuItem47 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem48 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
+            this.td_stopCameraButt = new MetroFramework.Controls.MetroButton();
+            this.td_DetectTextButt = new MetroFramework.Controls.MetroButton();
+            this.td_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.td_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip6 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,6 +117,10 @@
             this.toolStripMenuItem49 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
+            this.fd_stopCameraButt = new MetroFramework.Controls.MetroButton();
+            this.fd_detectFaceButt = new MetroFramework.Controls.MetroButton();
+            this.fd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.fd_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip7 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,36 +131,47 @@
             this.toolStripMenuItem51 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem52 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
+            this.hg_stopCameraButt = new MetroFramework.Controls.MetroButton();
+            this.hg_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.hg_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip8 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem37 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem38 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem39 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem41 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem42 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem53 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem54 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ed_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ed_imgOutputPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ed_imgInputPicBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).BeginInit();
             this.menuStrip3.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).BeginInit();
             this.menuStrip4.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).BeginInit();
             this.menuStrip5.SuspendLayout();
             this.metroTabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).BeginInit();
             this.menuStrip6.SuspendLayout();
             this.metroTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).BeginInit();
             this.menuStrip7.SuspendLayout();
             this.metroTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hg_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hg_imgInputPicBox)).BeginInit();
             this.menuStrip8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,7 +187,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage8);
             this.metroTabControl1.Location = new System.Drawing.Point(24, 64);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 5;
             this.metroTabControl1.Size = new System.Drawing.Size(999, 550);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -175,6 +212,18 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
+            // ed_stopCameraButt
+            // 
+            this.ed_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.ed_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.ed_stopCameraButt.Location = new System.Drawing.Point(423, 470);
+            this.ed_stopCameraButt.Name = "ed_stopCameraButt";
+            this.ed_stopCameraButt.Size = new System.Drawing.Size(154, 35);
+            this.ed_stopCameraButt.TabIndex = 7;
+            this.ed_stopCameraButt.Text = "Stop Camera";
+            this.ed_stopCameraButt.UseSelectable = true;
+            this.ed_stopCameraButt.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
             // ed_detectEdgeButt
             // 
             this.ed_detectEdgeButt.FontSize = MetroFramework.MetroButtonSize.Tall;
@@ -189,7 +238,7 @@
             // 
             // ed_imgOutputPicBox
             // 
-            this.ed_imgOutputPicBox.Location = new System.Drawing.Point(538, 27);
+            this.ed_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
             this.ed_imgOutputPicBox.Name = "ed_imgOutputPicBox";
             this.ed_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
             this.ed_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,8 +329,8 @@
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.ib_binarizeButt);
-            this.metroTabPage2.Controls.Add(this.pictureBox1);
-            this.metroTabPage2.Controls.Add(this.pictureBox2);
+            this.metroTabPage2.Controls.Add(this.ib_imgOutputPicBox);
+            this.metroTabPage2.Controls.Add(this.ib_imgInputPicBox);
             this.metroTabPage2.Controls.Add(this.menuStrip2);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
@@ -305,24 +354,25 @@
             this.ib_binarizeButt.TabIndex = 9;
             this.ib_binarizeButt.Text = "Binarize";
             this.ib_binarizeButt.UseSelectable = true;
+            this.ib_binarizeButt.Click += new System.EventHandler(this.ib_binarizeButt_Click);
             // 
-            // pictureBox1
+            // ib_imgOutputPicBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(535, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(457, 437);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.ib_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.ib_imgOutputPicBox.Name = "ib_imgOutputPicBox";
+            this.ib_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ib_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ib_imgOutputPicBox.TabIndex = 8;
+            this.ib_imgOutputPicBox.TabStop = false;
             // 
-            // pictureBox2
+            // ib_imgInputPicBox
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(457, 437);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.ib_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.ib_imgInputPicBox.Name = "ib_imgInputPicBox";
+            this.ib_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ib_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ib_imgInputPicBox.TabIndex = 7;
+            this.ib_imgInputPicBox.TabStop = false;
             // 
             // menuStrip2
             // 
@@ -346,24 +396,10 @@
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(103, 22);
             this.toolStripMenuItem2.Text = "Open";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem3.Text = "Picture";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem4.Text = "Camera";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -396,6 +432,12 @@
             // 
             // metroTabPage3
             // 
+            this.metroTabPage3.Controls.Add(this.ih_blueRadioButt);
+            this.metroTabPage3.Controls.Add(this.ih_greenRadioButt);
+            this.metroTabPage3.Controls.Add(this.ih_redRadioButt);
+            this.metroTabPage3.Controls.Add(this.histogramBox);
+            this.metroTabPage3.Controls.Add(this.ih_histogramButt);
+            this.metroTabPage3.Controls.Add(this.ih_imgInputPicBox);
             this.metroTabPage3.Controls.Add(this.menuStrip3);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
@@ -408,6 +450,72 @@
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
+            // 
+            // ih_blueRadioButt
+            // 
+            this.ih_blueRadioButt.AutoSize = true;
+            this.ih_blueRadioButt.Location = new System.Drawing.Point(477, 148);
+            this.ih_blueRadioButt.Name = "ih_blueRadioButt";
+            this.ih_blueRadioButt.Size = new System.Drawing.Size(46, 15);
+            this.ih_blueRadioButt.TabIndex = 16;
+            this.ih_blueRadioButt.Text = "Blue";
+            this.ih_blueRadioButt.UseSelectable = true;
+            this.ih_blueRadioButt.CheckedChanged += new System.EventHandler(this.ih_blueRadioButt_CheckedChanged);
+            this.ih_blueRadioButt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ih_blueRadioButt_MouseClick);
+            // 
+            // ih_greenRadioButt
+            // 
+            this.ih_greenRadioButt.AutoSize = true;
+            this.ih_greenRadioButt.Location = new System.Drawing.Point(477, 115);
+            this.ih_greenRadioButt.Name = "ih_greenRadioButt";
+            this.ih_greenRadioButt.Size = new System.Drawing.Size(54, 15);
+            this.ih_greenRadioButt.TabIndex = 15;
+            this.ih_greenRadioButt.Text = "Green";
+            this.ih_greenRadioButt.UseSelectable = true;
+            this.ih_greenRadioButt.CheckedChanged += new System.EventHandler(this.ih_greenRadioButt_CheckedChanged);
+            this.ih_greenRadioButt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ih_greenRadioButt_MouseClick);
+            // 
+            // ih_redRadioButt
+            // 
+            this.ih_redRadioButt.AutoSize = true;
+            this.ih_redRadioButt.Checked = true;
+            this.ih_redRadioButt.Location = new System.Drawing.Point(477, 81);
+            this.ih_redRadioButt.Name = "ih_redRadioButt";
+            this.ih_redRadioButt.Size = new System.Drawing.Size(43, 15);
+            this.ih_redRadioButt.TabIndex = 14;
+            this.ih_redRadioButt.TabStop = true;
+            this.ih_redRadioButt.Text = "Red";
+            this.ih_redRadioButt.UseSelectable = true;
+            this.ih_redRadioButt.CheckedChanged += new System.EventHandler(this.ih_redRadioButt_CheckedChanged);
+            this.ih_redRadioButt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ih_redRadioButt_MouseClick);
+            // 
+            // histogramBox
+            // 
+            this.histogramBox.Location = new System.Drawing.Point(535, 27);
+            this.histogramBox.Name = "histogramBox";
+            this.histogramBox.Size = new System.Drawing.Size(460, 437);
+            this.histogramBox.TabIndex = 13;
+            // 
+            // ih_histogramButt
+            // 
+            this.ih_histogramButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.ih_histogramButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.ih_histogramButt.Location = new System.Drawing.Point(420, 470);
+            this.ih_histogramButt.Name = "ih_histogramButt";
+            this.ih_histogramButt.Size = new System.Drawing.Size(154, 35);
+            this.ih_histogramButt.TabIndex = 12;
+            this.ih_histogramButt.Text = "Histogram";
+            this.ih_histogramButt.UseSelectable = true;
+            this.ih_histogramButt.Click += new System.EventHandler(this.ih_histogramButt_Click);
+            // 
+            // ih_imgInputPicBox
+            // 
+            this.ih_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.ih_imgInputPicBox.Name = "ih_imgInputPicBox";
+            this.ih_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ih_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ih_imgInputPicBox.TabIndex = 10;
+            this.ih_imgInputPicBox.TabStop = false;
             // 
             // menuStrip3
             // 
@@ -434,6 +542,7 @@
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(103, 22);
             this.toolStripMenuItem8.Text = "Open";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
@@ -466,6 +575,17 @@
             // 
             // metroTabPage4
             // 
+            this.metroTabPage4.Controls.Add(this.m_erodeOnBinaryButt);
+            this.metroTabPage4.Controls.Add(this.m_dilateOnBinaryButt);
+            this.metroTabPage4.Controls.Add(this.m_blackHatButt);
+            this.metroTabPage4.Controls.Add(this.m_topHatButt);
+            this.metroTabPage4.Controls.Add(this.m_gradientButt);
+            this.metroTabPage4.Controls.Add(this.m_closeButt);
+            this.metroTabPage4.Controls.Add(this.m_openButt);
+            this.metroTabPage4.Controls.Add(this.m_dilationButt);
+            this.metroTabPage4.Controls.Add(this.m_erosionButt);
+            this.metroTabPage4.Controls.Add(this.m_imgOutputPicBox);
+            this.metroTabPage4.Controls.Add(this.m_imgInputPicBox);
             this.metroTabPage4.Controls.Add(this.menuStrip4);
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
@@ -478,6 +598,132 @@
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // m_erodeOnBinaryButt
+            // 
+            this.m_erodeOnBinaryButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_erodeOnBinaryButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_erodeOnBinaryButt.Location = new System.Drawing.Point(425, 395);
+            this.m_erodeOnBinaryButt.Name = "m_erodeOnBinaryButt";
+            this.m_erodeOnBinaryButt.Size = new System.Drawing.Size(139, 35);
+            this.m_erodeOnBinaryButt.TabIndex = 22;
+            this.m_erodeOnBinaryButt.Text = "Erode On Binary";
+            this.m_erodeOnBinaryButt.UseSelectable = true;
+            this.m_erodeOnBinaryButt.Click += new System.EventHandler(this.m_erodeOnBinaryButt_Click);
+            // 
+            // m_dilateOnBinaryButt
+            // 
+            this.m_dilateOnBinaryButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_dilateOnBinaryButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_dilateOnBinaryButt.Location = new System.Drawing.Point(425, 354);
+            this.m_dilateOnBinaryButt.Name = "m_dilateOnBinaryButt";
+            this.m_dilateOnBinaryButt.Size = new System.Drawing.Size(139, 35);
+            this.m_dilateOnBinaryButt.TabIndex = 21;
+            this.m_dilateOnBinaryButt.Text = "Dilate On Binary";
+            this.m_dilateOnBinaryButt.UseSelectable = true;
+            this.m_dilateOnBinaryButt.Click += new System.EventHandler(this.m_dilateOnBinaryButt_Click);
+            // 
+            // m_blackHatButt
+            // 
+            this.m_blackHatButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_blackHatButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_blackHatButt.Location = new System.Drawing.Point(425, 313);
+            this.m_blackHatButt.Name = "m_blackHatButt";
+            this.m_blackHatButt.Size = new System.Drawing.Size(139, 35);
+            this.m_blackHatButt.TabIndex = 20;
+            this.m_blackHatButt.Text = "Black Hat";
+            this.m_blackHatButt.UseSelectable = true;
+            this.m_blackHatButt.Click += new System.EventHandler(this.m_blackHatButt_Click);
+            // 
+            // m_topHatButt
+            // 
+            this.m_topHatButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_topHatButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_topHatButt.Location = new System.Drawing.Point(425, 272);
+            this.m_topHatButt.Name = "m_topHatButt";
+            this.m_topHatButt.Size = new System.Drawing.Size(139, 35);
+            this.m_topHatButt.TabIndex = 19;
+            this.m_topHatButt.Text = "Top Hat";
+            this.m_topHatButt.UseSelectable = true;
+            this.m_topHatButt.Click += new System.EventHandler(this.m_topHatButt_Click);
+            // 
+            // m_gradientButt
+            // 
+            this.m_gradientButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_gradientButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_gradientButt.Location = new System.Drawing.Point(425, 231);
+            this.m_gradientButt.Name = "m_gradientButt";
+            this.m_gradientButt.Size = new System.Drawing.Size(139, 35);
+            this.m_gradientButt.TabIndex = 18;
+            this.m_gradientButt.Text = "Gradient";
+            this.m_gradientButt.UseSelectable = true;
+            this.m_gradientButt.Click += new System.EventHandler(this.m_gradientButt_Click);
+            // 
+            // m_closeButt
+            // 
+            this.m_closeButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_closeButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_closeButt.Location = new System.Drawing.Point(425, 190);
+            this.m_closeButt.Name = "m_closeButt";
+            this.m_closeButt.Size = new System.Drawing.Size(139, 35);
+            this.m_closeButt.TabIndex = 17;
+            this.m_closeButt.Text = "Close";
+            this.m_closeButt.UseSelectable = true;
+            this.m_closeButt.Click += new System.EventHandler(this.m_closeButt_Click);
+            // 
+            // m_openButt
+            // 
+            this.m_openButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_openButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_openButt.Location = new System.Drawing.Point(425, 149);
+            this.m_openButt.Name = "m_openButt";
+            this.m_openButt.Size = new System.Drawing.Size(139, 35);
+            this.m_openButt.TabIndex = 16;
+            this.m_openButt.Text = "Open";
+            this.m_openButt.UseSelectable = true;
+            this.m_openButt.Click += new System.EventHandler(this.m_openButt_Click);
+            // 
+            // m_dilationButt
+            // 
+            this.m_dilationButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_dilationButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_dilationButt.Location = new System.Drawing.Point(425, 108);
+            this.m_dilationButt.Name = "m_dilationButt";
+            this.m_dilationButt.Size = new System.Drawing.Size(139, 35);
+            this.m_dilationButt.TabIndex = 15;
+            this.m_dilationButt.Text = "Dilation";
+            this.m_dilationButt.UseSelectable = true;
+            this.m_dilationButt.Click += new System.EventHandler(this.m_dilationButt_Click);
+            // 
+            // m_erosionButt
+            // 
+            this.m_erosionButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.m_erosionButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.m_erosionButt.Location = new System.Drawing.Point(425, 67);
+            this.m_erosionButt.Name = "m_erosionButt";
+            this.m_erosionButt.Size = new System.Drawing.Size(139, 35);
+            this.m_erosionButt.TabIndex = 14;
+            this.m_erosionButt.Text = "Erosion";
+            this.m_erosionButt.UseSelectable = true;
+            this.m_erosionButt.Click += new System.EventHandler(this.m_erosionButt_Click);
+            // 
+            // m_imgOutputPicBox
+            // 
+            this.m_imgOutputPicBox.Location = new System.Drawing.Point(580, 27);
+            this.m_imgOutputPicBox.Name = "m_imgOutputPicBox";
+            this.m_imgOutputPicBox.Size = new System.Drawing.Size(408, 437);
+            this.m_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.m_imgOutputPicBox.TabIndex = 13;
+            this.m_imgOutputPicBox.TabStop = false;
+            // 
+            // m_imgInputPicBox
+            // 
+            this.m_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.m_imgInputPicBox.Name = "m_imgInputPicBox";
+            this.m_imgInputPicBox.Size = new System.Drawing.Size(406, 437);
+            this.m_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.m_imgInputPicBox.TabIndex = 12;
+            this.m_imgInputPicBox.TabStop = false;
             // 
             // menuStrip4
             // 
@@ -501,24 +747,10 @@
             // 
             // toolStripMenuItem14
             // 
-            this.toolStripMenuItem14.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem15,
-            this.toolStripMenuItem16});
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
             this.toolStripMenuItem14.Size = new System.Drawing.Size(103, 22);
             this.toolStripMenuItem14.Text = "Open";
-            // 
-            // toolStripMenuItem15
-            // 
-            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem15.Text = "Picture";
-            // 
-            // toolStripMenuItem16
-            // 
-            this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem16.Text = "Camera";
+            this.toolStripMenuItem14.Click += new System.EventHandler(this.toolStripMenuItem14_Click);
             // 
             // toolStripMenuItem17
             // 
@@ -551,6 +783,10 @@
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.sd_stopCameraButt);
+            this.metroTabPage5.Controls.Add(this.sd_DetectShapeButt);
+            this.metroTabPage5.Controls.Add(this.sd_imgOutputPicBox);
+            this.metroTabPage5.Controls.Add(this.sd_imgInputPicBox);
             this.metroTabPage5.Controls.Add(this.menuStrip5);
             this.metroTabPage5.HorizontalScrollbarBarColor = true;
             this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
@@ -563,6 +799,48 @@
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
+            // 
+            // sd_stopCameraButt
+            // 
+            this.sd_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.sd_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.sd_stopCameraButt.Location = new System.Drawing.Point(420, 470);
+            this.sd_stopCameraButt.Name = "sd_stopCameraButt";
+            this.sd_stopCameraButt.Size = new System.Drawing.Size(154, 35);
+            this.sd_stopCameraButt.TabIndex = 16;
+            this.sd_stopCameraButt.Text = "Stop Camera";
+            this.sd_stopCameraButt.UseSelectable = true;
+            this.sd_stopCameraButt.Click += new System.EventHandler(this.sd_stopCameraButt_Click);
+            // 
+            // sd_DetectShapeButt
+            // 
+            this.sd_DetectShapeButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.sd_DetectShapeButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.sd_DetectShapeButt.Location = new System.Drawing.Point(420, 470);
+            this.sd_DetectShapeButt.Name = "sd_DetectShapeButt";
+            this.sd_DetectShapeButt.Size = new System.Drawing.Size(154, 35);
+            this.sd_DetectShapeButt.TabIndex = 15;
+            this.sd_DetectShapeButt.Text = "Detect Shape";
+            this.sd_DetectShapeButt.UseSelectable = true;
+            this.sd_DetectShapeButt.Click += new System.EventHandler(this.sd_DetectShapeButt_Click);
+            // 
+            // sd_imgOutputPicBox
+            // 
+            this.sd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.sd_imgOutputPicBox.Name = "sd_imgOutputPicBox";
+            this.sd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.sd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sd_imgOutputPicBox.TabIndex = 14;
+            this.sd_imgOutputPicBox.TabStop = false;
+            // 
+            // sd_imgInputPicBox
+            // 
+            this.sd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.sd_imgInputPicBox.Name = "sd_imgInputPicBox";
+            this.sd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.sd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sd_imgInputPicBox.TabIndex = 13;
+            this.sd_imgInputPicBox.TabStop = false;
             // 
             // menuStrip5
             // 
@@ -598,12 +876,14 @@
             this.toolStripMenuItem23.Name = "toolStripMenuItem23";
             this.toolStripMenuItem23.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem23.Text = "Picture";
+            this.toolStripMenuItem23.Click += new System.EventHandler(this.toolStripMenuItem23_Click);
             // 
             // toolStripMenuItem24
             // 
             this.toolStripMenuItem24.Name = "toolStripMenuItem24";
             this.toolStripMenuItem24.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem24.Text = "Camera";
+            this.toolStripMenuItem24.Click += new System.EventHandler(this.toolStripMenuItem24_Click);
             // 
             // toolStripMenuItem45
             // 
@@ -636,6 +916,10 @@
             // 
             // metroTabPage6
             // 
+            this.metroTabPage6.Controls.Add(this.td_stopCameraButt);
+            this.metroTabPage6.Controls.Add(this.td_DetectTextButt);
+            this.metroTabPage6.Controls.Add(this.td_imgOutputPicBox);
+            this.metroTabPage6.Controls.Add(this.td_imgInputPicBox);
             this.metroTabPage6.Controls.Add(this.menuStrip6);
             this.metroTabPage6.HorizontalScrollbarBarColor = true;
             this.metroTabPage6.HorizontalScrollbarHighlightOnWheel = false;
@@ -648,6 +932,48 @@
             this.metroTabPage6.VerticalScrollbarBarColor = true;
             this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage6.VerticalScrollbarSize = 10;
+            // 
+            // td_stopCameraButt
+            // 
+            this.td_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.td_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.td_stopCameraButt.Location = new System.Drawing.Point(420, 470);
+            this.td_stopCameraButt.Name = "td_stopCameraButt";
+            this.td_stopCameraButt.Size = new System.Drawing.Size(154, 35);
+            this.td_stopCameraButt.TabIndex = 19;
+            this.td_stopCameraButt.Text = "Stop Camera";
+            this.td_stopCameraButt.UseSelectable = true;
+            this.td_stopCameraButt.Click += new System.EventHandler(this.td_stopCameraButt_Click);
+            // 
+            // td_DetectTextButt
+            // 
+            this.td_DetectTextButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.td_DetectTextButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.td_DetectTextButt.Location = new System.Drawing.Point(420, 470);
+            this.td_DetectTextButt.Name = "td_DetectTextButt";
+            this.td_DetectTextButt.Size = new System.Drawing.Size(154, 35);
+            this.td_DetectTextButt.TabIndex = 18;
+            this.td_DetectTextButt.Text = "Detect Text";
+            this.td_DetectTextButt.UseSelectable = true;
+            this.td_DetectTextButt.Click += new System.EventHandler(this.td_DetectTextButt_Click);
+            // 
+            // td_imgOutputPicBox
+            // 
+            this.td_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.td_imgOutputPicBox.Name = "td_imgOutputPicBox";
+            this.td_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.td_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.td_imgOutputPicBox.TabIndex = 17;
+            this.td_imgOutputPicBox.TabStop = false;
+            // 
+            // td_imgInputPicBox
+            // 
+            this.td_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.td_imgInputPicBox.Name = "td_imgInputPicBox";
+            this.td_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.td_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.td_imgInputPicBox.TabIndex = 16;
+            this.td_imgInputPicBox.TabStop = false;
             // 
             // menuStrip6
             // 
@@ -683,12 +1009,14 @@
             this.toolStripMenuItem27.Name = "toolStripMenuItem27";
             this.toolStripMenuItem27.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem27.Text = "Picture";
+            this.toolStripMenuItem27.Click += new System.EventHandler(this.toolStripMenuItem27_Click);
             // 
             // toolStripMenuItem28
             // 
             this.toolStripMenuItem28.Name = "toolStripMenuItem28";
             this.toolStripMenuItem28.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem28.Text = "Camera";
+            this.toolStripMenuItem28.Click += new System.EventHandler(this.toolStripMenuItem28_Click);
             // 
             // toolStripMenuItem29
             // 
@@ -721,6 +1049,10 @@
             // 
             // metroTabPage7
             // 
+            this.metroTabPage7.Controls.Add(this.fd_stopCameraButt);
+            this.metroTabPage7.Controls.Add(this.fd_detectFaceButt);
+            this.metroTabPage7.Controls.Add(this.fd_imgOutputPicBox);
+            this.metroTabPage7.Controls.Add(this.fd_imgInputPicBox);
             this.metroTabPage7.Controls.Add(this.menuStrip7);
             this.metroTabPage7.HorizontalScrollbarBarColor = true;
             this.metroTabPage7.HorizontalScrollbarHighlightOnWheel = false;
@@ -733,6 +1065,48 @@
             this.metroTabPage7.VerticalScrollbarBarColor = true;
             this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.VerticalScrollbarSize = 10;
+            // 
+            // fd_stopCameraButt
+            // 
+            this.fd_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.fd_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.fd_stopCameraButt.Location = new System.Drawing.Point(420, 470);
+            this.fd_stopCameraButt.Name = "fd_stopCameraButt";
+            this.fd_stopCameraButt.Size = new System.Drawing.Size(154, 35);
+            this.fd_stopCameraButt.TabIndex = 22;
+            this.fd_stopCameraButt.Text = "Stop Camera";
+            this.fd_stopCameraButt.UseSelectable = true;
+            this.fd_stopCameraButt.Click += new System.EventHandler(this.fd_stopCameraButt_Click);
+            // 
+            // fd_detectFaceButt
+            // 
+            this.fd_detectFaceButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.fd_detectFaceButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.fd_detectFaceButt.Location = new System.Drawing.Point(420, 470);
+            this.fd_detectFaceButt.Name = "fd_detectFaceButt";
+            this.fd_detectFaceButt.Size = new System.Drawing.Size(154, 35);
+            this.fd_detectFaceButt.TabIndex = 21;
+            this.fd_detectFaceButt.Text = "Detect Face";
+            this.fd_detectFaceButt.UseSelectable = true;
+            this.fd_detectFaceButt.Click += new System.EventHandler(this.fd_detectFaceButt_Click);
+            // 
+            // fd_imgOutputPicBox
+            // 
+            this.fd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.fd_imgOutputPicBox.Name = "fd_imgOutputPicBox";
+            this.fd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.fd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fd_imgOutputPicBox.TabIndex = 20;
+            this.fd_imgOutputPicBox.TabStop = false;
+            // 
+            // fd_imgInputPicBox
+            // 
+            this.fd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.fd_imgInputPicBox.Name = "fd_imgInputPicBox";
+            this.fd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.fd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fd_imgInputPicBox.TabIndex = 19;
+            this.fd_imgInputPicBox.TabStop = false;
             // 
             // menuStrip7
             // 
@@ -760,25 +1134,27 @@
             this.toolStripMenuItem33,
             this.toolStripMenuItem34});
             this.toolStripMenuItem32.Name = "toolStripMenuItem32";
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(103, 22);
+            this.toolStripMenuItem32.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem32.Text = "Open";
             // 
             // toolStripMenuItem33
             // 
             this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(115, 22);
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem33.Text = "Picture";
+            this.toolStripMenuItem33.Click += new System.EventHandler(this.toolStripMenuItem33_Click);
             // 
             // toolStripMenuItem34
             // 
             this.toolStripMenuItem34.Name = "toolStripMenuItem34";
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(115, 22);
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem34.Text = "Camera";
+            this.toolStripMenuItem34.Click += new System.EventHandler(this.toolStripMenuItem34_Click);
             // 
             // toolStripMenuItem35
             // 
             this.toolStripMenuItem35.Name = "toolStripMenuItem35";
-            this.toolStripMenuItem35.Size = new System.Drawing.Size(103, 22);
+            this.toolStripMenuItem35.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem35.Text = "Exit";
             this.toolStripMenuItem35.Click += new System.EventHandler(this.toolStripMenuItem35_Click);
             // 
@@ -806,6 +1182,9 @@
             // 
             // metroTabPage8
             // 
+            this.metroTabPage8.Controls.Add(this.hg_stopCameraButt);
+            this.metroTabPage8.Controls.Add(this.hg_imgOutputPicBox);
+            this.metroTabPage8.Controls.Add(this.hg_imgInputPicBox);
             this.metroTabPage8.Controls.Add(this.menuStrip8);
             this.metroTabPage8.HorizontalScrollbarBarColor = true;
             this.metroTabPage8.HorizontalScrollbarHighlightOnWheel = false;
@@ -818,6 +1197,35 @@
             this.metroTabPage8.VerticalScrollbarBarColor = true;
             this.metroTabPage8.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage8.VerticalScrollbarSize = 10;
+            // 
+            // hg_stopCameraButt
+            // 
+            this.hg_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.hg_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
+            this.hg_stopCameraButt.Location = new System.Drawing.Point(420, 470);
+            this.hg_stopCameraButt.Name = "hg_stopCameraButt";
+            this.hg_stopCameraButt.Size = new System.Drawing.Size(154, 35);
+            this.hg_stopCameraButt.TabIndex = 24;
+            this.hg_stopCameraButt.Text = "Stop Camera";
+            this.hg_stopCameraButt.UseSelectable = true;
+            // 
+            // hg_imgOutputPicBox
+            // 
+            this.hg_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.hg_imgOutputPicBox.Name = "hg_imgOutputPicBox";
+            this.hg_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.hg_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hg_imgOutputPicBox.TabIndex = 23;
+            this.hg_imgOutputPicBox.TabStop = false;
+            // 
+            // hg_imgInputPicBox
+            // 
+            this.hg_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.hg_imgInputPicBox.Name = "hg_imgInputPicBox";
+            this.hg_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.hg_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hg_imgInputPicBox.TabIndex = 22;
+            this.hg_imgInputPicBox.TabStop = false;
             // 
             // menuStrip8
             // 
@@ -841,29 +1249,14 @@
             // 
             // toolStripMenuItem38
             // 
-            this.toolStripMenuItem38.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem39,
-            this.toolStripMenuItem40});
             this.toolStripMenuItem38.Name = "toolStripMenuItem38";
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(103, 22);
-            this.toolStripMenuItem38.Text = "Open";
-            // 
-            // toolStripMenuItem39
-            // 
-            this.toolStripMenuItem39.Name = "toolStripMenuItem39";
-            this.toolStripMenuItem39.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem39.Text = "Picture";
-            // 
-            // toolStripMenuItem40
-            // 
-            this.toolStripMenuItem40.Name = "toolStripMenuItem40";
-            this.toolStripMenuItem40.Size = new System.Drawing.Size(115, 22);
-            this.toolStripMenuItem40.Text = "Camera";
+            this.toolStripMenuItem38.Size = new System.Drawing.Size(147, 22);
+            this.toolStripMenuItem38.Text = "Open Camera";
             // 
             // toolStripMenuItem41
             // 
             this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(103, 22);
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(147, 22);
             this.toolStripMenuItem41.Text = "Exit";
             this.toolStripMenuItem41.Click += new System.EventHandler(this.toolStripMenuItem41_Click);
             // 
@@ -889,18 +1282,6 @@
             this.toolStripMenuItem54.Text = "Creator";
             this.toolStripMenuItem54.Click += new System.EventHandler(this.toolStripMenuItem54_Click);
             // 
-            // ed_stopCameraButt
-            // 
-            this.ed_stopCameraButt.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.ed_stopCameraButt.FontWeight = MetroFramework.MetroButtonWeight.Light;
-            this.ed_stopCameraButt.Location = new System.Drawing.Point(423, 470);
-            this.ed_stopCameraButt.Name = "ed_stopCameraButt";
-            this.ed_stopCameraButt.Size = new System.Drawing.Size(154, 35);
-            this.ed_stopCameraButt.TabIndex = 7;
-            this.ed_stopCameraButt.Text = "Stop Camera";
-            this.ed_stopCameraButt.UseSelectable = true;
-            this.ed_stopCameraButt.Click += new System.EventHandler(this.metroButton3_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -923,32 +1304,43 @@
             this.menuStrip1.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).EndInit();
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).EndInit();
             this.menuStrip4.ResumeLayout(false);
             this.menuStrip4.PerformLayout();
             this.metroTabPage5.ResumeLayout(false);
             this.metroTabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).EndInit();
             this.menuStrip5.ResumeLayout(false);
             this.menuStrip5.PerformLayout();
             this.metroTabPage6.ResumeLayout(false);
             this.metroTabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).EndInit();
             this.menuStrip6.ResumeLayout(false);
             this.menuStrip6.PerformLayout();
             this.metroTabPage7.ResumeLayout(false);
             this.metroTabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).EndInit();
             this.menuStrip7.ResumeLayout(false);
             this.menuStrip7.PerformLayout();
             this.metroTabPage8.ResumeLayout(false);
             this.metroTabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hg_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hg_imgInputPicBox)).EndInit();
             this.menuStrip8.ResumeLayout(false);
             this.menuStrip8.PerformLayout();
             this.ResumeLayout(false);
@@ -980,8 +1372,6 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem43;
@@ -996,8 +1386,6 @@
         private System.Windows.Forms.MenuStrip menuStrip4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem16;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem17;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem18;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem19;
@@ -1032,16 +1420,46 @@
         private System.Windows.Forms.MenuStrip menuStrip8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem37;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem38;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem39;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem40;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem41;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem42;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem53;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem54;
         private MetroFramework.Controls.MetroButton ed_detectEdgeButt;
         private MetroFramework.Controls.MetroButton ib_binarizeButt;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ib_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox ib_imgInputPicBox;
         private MetroFramework.Controls.MetroButton ed_stopCameraButt;
+        private MetroFramework.Controls.MetroButton ih_histogramButt;
+        private System.Windows.Forms.PictureBox ih_imgInputPicBox;
+        private System.Windows.Forms.PictureBox m_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox m_imgInputPicBox;
+        private MetroFramework.Controls.MetroButton sd_stopCameraButt;
+        private MetroFramework.Controls.MetroButton sd_DetectShapeButt;
+        private System.Windows.Forms.PictureBox sd_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox sd_imgInputPicBox;
+        private MetroFramework.Controls.MetroButton td_stopCameraButt;
+        private MetroFramework.Controls.MetroButton td_DetectTextButt;
+        private System.Windows.Forms.PictureBox td_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox td_imgInputPicBox;
+        private MetroFramework.Controls.MetroButton fd_stopCameraButt;
+        private MetroFramework.Controls.MetroButton fd_detectFaceButt;
+        private System.Windows.Forms.PictureBox fd_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox fd_imgInputPicBox;
+        private MetroFramework.Controls.MetroButton hg_stopCameraButt;
+        private System.Windows.Forms.PictureBox hg_imgOutputPicBox;
+        private System.Windows.Forms.PictureBox hg_imgInputPicBox;
+        private MetroFramework.Controls.MetroButton m_erodeOnBinaryButt;
+        private MetroFramework.Controls.MetroButton m_dilateOnBinaryButt;
+        private MetroFramework.Controls.MetroButton m_blackHatButt;
+        private MetroFramework.Controls.MetroButton m_topHatButt;
+        private MetroFramework.Controls.MetroButton m_gradientButt;
+        private MetroFramework.Controls.MetroButton m_closeButt;
+        private MetroFramework.Controls.MetroButton m_openButt;
+        private MetroFramework.Controls.MetroButton m_dilationButt;
+        private MetroFramework.Controls.MetroButton m_erosionButt;
+        private Emgu.CV.UI.HistogramBox histogramBox;
+        private MetroFramework.Controls.MetroRadioButton ih_blueRadioButt;
+        private MetroFramework.Controls.MetroRadioButton ih_greenRadioButt;
+        private MetroFramework.Controls.MetroRadioButton ih_redRadioButt;
     }
 }
