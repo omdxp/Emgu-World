@@ -49,13 +49,53 @@ namespace Emgu_World
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroButton8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void edgeDetectionTile_Click(object sender, EventArgs e)
+        {
             menu = new Menu();
             menu.ChangeTab(0);
             menu.Show();
             Close();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void imageBinrizationTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(1);
@@ -63,7 +103,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        private void imageHistogramTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(2);
@@ -71,7 +111,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton4_Click(object sender, EventArgs e)
+        private void morphologyTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(3);
@@ -79,7 +119,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton5_Click(object sender, EventArgs e)
+        private void shapeDetectionTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(4);
@@ -87,7 +127,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton6_Click(object sender, EventArgs e)
+        private void textDetectionTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(5);
@@ -95,7 +135,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton7_Click(object sender, EventArgs e)
+        private void faceDetectionTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(6);
@@ -103,7 +143,7 @@ namespace Emgu_World
             Close();
         }
 
-        private void metroButton8_Click(object sender, EventArgs e)
+        private void handGestureTile_Click(object sender, EventArgs e)
         {
             menu = new Menu();
             menu.ChangeTab(7);

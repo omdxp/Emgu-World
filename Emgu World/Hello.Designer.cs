@@ -29,154 +29,193 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hello));
+            this.handGestureTile = new MetroFramework.Controls.MetroTile();
+            this.faceDetectionTile = new MetroFramework.Controls.MetroTile();
+            this.textDetectionTile = new MetroFramework.Controls.MetroTile();
+            this.shapeDetectionTile = new MetroFramework.Controls.MetroTile();
+            this.morphologyTile = new MetroFramework.Controls.MetroTile();
+            this.imageHistogramTile = new MetroFramework.Controls.MetroTile();
+            this.imageBinrizationTile = new MetroFramework.Controls.MetroTile();
+            this.edgeDetectionTile = new MetroFramework.Controls.MetroTile();
             this.slidesPicBox = new System.Windows.Forms.PictureBox();
-            this.metroButton8 = new MetroFramework.Controls.MetroButton();
-            this.metroButton7 = new MetroFramework.Controls.MetroButton();
-            this.metroButton6 = new MetroFramework.Controls.MetroButton();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.slidesPicBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // handGestureTile
+            // 
+            this.handGestureTile.ActiveControl = null;
+            this.handGestureTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.handGestureTile.Location = new System.Drawing.Point(190, 368);
+            this.handGestureTile.Name = "handGestureTile";
+            this.handGestureTile.Size = new System.Drawing.Size(137, 132);
+            this.handGestureTile.TabIndex = 17;
+            this.handGestureTile.Text = "Hand Gesture";
+            this.handGestureTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.handGestureTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.handGestureTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.handGestureTile.UseSelectable = true;
+            this.handGestureTile.UseTileImage = true;
+            this.handGestureTile.Click += new System.EventHandler(this.handGestureTile_Click);
+            // 
+            // faceDetectionTile
+            // 
+            this.faceDetectionTile.ActiveControl = null;
+            this.faceDetectionTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.faceDetectionTile.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.faceDetectionTile.Location = new System.Drawing.Point(23, 506);
+            this.faceDetectionTile.Name = "faceDetectionTile";
+            this.faceDetectionTile.Size = new System.Drawing.Size(304, 129);
+            this.faceDetectionTile.TabIndex = 16;
+            this.faceDetectionTile.Text = "Face Detection";
+            this.faceDetectionTile.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.faceDetectionTile.TileImage = global::Emgu_World.Properties.Resources.faceDetection;
+            this.faceDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.faceDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.faceDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.faceDetectionTile.UseCustomForeColor = true;
+            this.faceDetectionTile.UseSelectable = true;
+            this.faceDetectionTile.UseTileImage = true;
+            this.faceDetectionTile.Click += new System.EventHandler(this.faceDetectionTile_Click);
+            // 
+            // textDetectionTile
+            // 
+            this.textDetectionTile.ActiveControl = null;
+            this.textDetectionTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textDetectionTile.ForeColor = System.Drawing.Color.Snow;
+            this.textDetectionTile.Location = new System.Drawing.Point(458, 63);
+            this.textDetectionTile.Name = "textDetectionTile";
+            this.textDetectionTile.Size = new System.Drawing.Size(266, 70);
+            this.textDetectionTile.TabIndex = 15;
+            this.textDetectionTile.Text = "Text Detection";
+            this.textDetectionTile.TileImage = global::Emgu_World.Properties.Resources.textDetection;
+            this.textDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.textDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.textDetectionTile.UseCustomForeColor = true;
+            this.textDetectionTile.UseSelectable = true;
+            this.textDetectionTile.UseTileImage = true;
+            this.textDetectionTile.Click += new System.EventHandler(this.textDetectionTile_Click);
+            // 
+            // shapeDetectionTile
+            // 
+            this.shapeDetectionTile.ActiveControl = null;
+            this.shapeDetectionTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shapeDetectionTile.Location = new System.Drawing.Point(730, 368);
+            this.shapeDetectionTile.Name = "shapeDetectionTile";
+            this.shapeDetectionTile.Size = new System.Drawing.Size(279, 143);
+            this.shapeDetectionTile.TabIndex = 14;
+            this.shapeDetectionTile.Text = "Shape Detection";
+            this.shapeDetectionTile.TileImage = global::Emgu_World.Properties.Resources.shapeDetection;
+            this.shapeDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.shapeDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.shapeDetectionTile.UseCustomForeColor = true;
+            this.shapeDetectionTile.UseSelectable = true;
+            this.shapeDetectionTile.UseTileImage = true;
+            this.shapeDetectionTile.Click += new System.EventHandler(this.shapeDetectionTile_Click);
+            // 
+            // morphologyTile
+            // 
+            this.morphologyTile.ActiveControl = null;
+            this.morphologyTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.morphologyTile.ForeColor = System.Drawing.Color.Snow;
+            this.morphologyTile.Location = new System.Drawing.Point(730, 63);
+            this.morphologyTile.Name = "morphologyTile";
+            this.morphologyTile.Size = new System.Drawing.Size(279, 299);
+            this.morphologyTile.TabIndex = 13;
+            this.morphologyTile.Text = "Morphology";
+            this.morphologyTile.TileImage = global::Emgu_World.Properties.Resources.morphology;
+            this.morphologyTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.morphologyTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.morphologyTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.morphologyTile.UseCustomForeColor = true;
+            this.morphologyTile.UseSelectable = true;
+            this.morphologyTile.UseTileImage = true;
+            this.morphologyTile.Click += new System.EventHandler(this.morphologyTile_Click);
+            // 
+            // imageHistogramTile
+            // 
+            this.imageHistogramTile.ActiveControl = null;
+            this.imageHistogramTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imageHistogramTile.ForeColor = System.Drawing.Color.Black;
+            this.imageHistogramTile.Location = new System.Drawing.Point(190, 178);
+            this.imageHistogramTile.Name = "imageHistogramTile";
+            this.imageHistogramTile.Size = new System.Drawing.Size(262, 184);
+            this.imageHistogramTile.TabIndex = 12;
+            this.imageHistogramTile.Text = "Image Histogram";
+            this.imageHistogramTile.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imageHistogramTile.TileImage = global::Emgu_World.Properties.Resources.imageHistogram;
+            this.imageHistogramTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.imageHistogramTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.imageHistogramTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.imageHistogramTile.UseCustomForeColor = true;
+            this.imageHistogramTile.UseSelectable = true;
+            this.imageHistogramTile.UseTileImage = true;
+            this.imageHistogramTile.Click += new System.EventHandler(this.imageHistogramTile_Click);
+            // 
+            // imageBinrizationTile
+            // 
+            this.imageBinrizationTile.ActiveControl = null;
+            this.imageBinrizationTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imageBinrizationTile.ForeColor = System.Drawing.Color.OrangeRed;
+            this.imageBinrizationTile.Location = new System.Drawing.Point(190, 63);
+            this.imageBinrizationTile.Name = "imageBinrizationTile";
+            this.imageBinrizationTile.Size = new System.Drawing.Size(262, 109);
+            this.imageBinrizationTile.TabIndex = 11;
+            this.imageBinrizationTile.Text = "Image Binarization";
+            this.imageBinrizationTile.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imageBinrizationTile.TileImage = global::Emgu_World.Properties.Resources.imageBinarization;
+            this.imageBinrizationTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.imageBinrizationTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.imageBinrizationTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.imageBinrizationTile.UseCustomForeColor = true;
+            this.imageBinrizationTile.UseSelectable = true;
+            this.imageBinrizationTile.UseTileImage = true;
+            this.imageBinrizationTile.Click += new System.EventHandler(this.imageBinrizationTile_Click);
+            // 
+            // edgeDetectionTile
+            // 
+            this.edgeDetectionTile.ActiveControl = null;
+            this.edgeDetectionTile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edgeDetectionTile.ForeColor = System.Drawing.Color.AliceBlue;
+            this.edgeDetectionTile.Location = new System.Drawing.Point(23, 63);
+            this.edgeDetectionTile.Name = "edgeDetectionTile";
+            this.edgeDetectionTile.Size = new System.Drawing.Size(161, 437);
+            this.edgeDetectionTile.TabIndex = 10;
+            this.edgeDetectionTile.Text = "Edge Detection";
+            this.edgeDetectionTile.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.edgeDetectionTile.TileImage = global::Emgu_World.Properties.Resources.edgeDetection;
+            this.edgeDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.edgeDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.edgeDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.edgeDetectionTile.UseCustomForeColor = true;
+            this.edgeDetectionTile.UseSelectable = true;
+            this.edgeDetectionTile.UseTileImage = true;
+            this.edgeDetectionTile.Click += new System.EventHandler(this.edgeDetectionTile_Click);
             // 
             // slidesPicBox
             // 
             this.slidesPicBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.slidesPicBox.Location = new System.Drawing.Point(20, 60);
             this.slidesPicBox.Name = "slidesPicBox";
-            this.slidesPicBox.Size = new System.Drawing.Size(943, 407);
+            this.slidesPicBox.Size = new System.Drawing.Size(992, 578);
             this.slidesPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidesPicBox.TabIndex = 0;
             this.slidesPicBox.TabStop = false;
-            // 
-            // metroButton8
-            // 
-            this.metroButton8.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton8.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton8.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton8.Location = new System.Drawing.Point(525, 353);
-            this.metroButton8.Name = "metroButton8";
-            this.metroButton8.Size = new System.Drawing.Size(157, 65);
-            this.metroButton8.TabIndex = 9;
-            this.metroButton8.Text = "Hand Gesture";
-            this.metroButton8.UseSelectable = true;
-            this.metroButton8.Click += new System.EventHandler(this.metroButton8_Click);
-            // 
-            // metroButton7
-            // 
-            this.metroButton7.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton7.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton7.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton7.Location = new System.Drawing.Point(295, 353);
-            this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(157, 65);
-            this.metroButton7.TabIndex = 8;
-            this.metroButton7.Text = "Face Detection";
-            this.metroButton7.UseSelectable = true;
-            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
-            // 
-            // metroButton6
-            // 
-            this.metroButton6.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton6.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton6.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton6.Location = new System.Drawing.Point(639, 246);
-            this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(157, 65);
-            this.metroButton6.TabIndex = 7;
-            this.metroButton6.Text = "Text Detection";
-            this.metroButton6.UseSelectable = true;
-            this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
-            // 
-            // metroButton5
-            // 
-            this.metroButton5.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton5.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton5.Location = new System.Drawing.Point(410, 246);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(157, 65);
-            this.metroButton5.TabIndex = 6;
-            this.metroButton5.Text = "Shape Detection";
-            this.metroButton5.UseSelectable = true;
-            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton4.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton4.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton4.Location = new System.Drawing.Point(180, 246);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(157, 65);
-            this.metroButton4.TabIndex = 5;
-            this.metroButton4.Text = "Morphology";
-            this.metroButton4.UseSelectable = true;
-            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton3.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton3.Location = new System.Drawing.Point(639, 138);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(157, 65);
-            this.metroButton3.TabIndex = 4;
-            this.metroButton3.Text = "Image Histogram";
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton2.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton2.Location = new System.Drawing.Point(410, 138);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(157, 65);
-            this.metroButton2.TabIndex = 3;
-            this.metroButton2.Text = "Image Binarization";
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton1.Location = new System.Drawing.Point(180, 138);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(157, 65);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.Text = "Edge Detection";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // Hello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 487);
+            this.ClientSize = new System.Drawing.Size(1032, 658);
             this.ControlBox = false;
-            this.Controls.Add(this.metroButton8);
-            this.Controls.Add(this.metroButton7);
-            this.Controls.Add(this.metroButton6);
-            this.Controls.Add(this.metroButton5);
-            this.Controls.Add(this.metroButton4);
-            this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.handGestureTile);
+            this.Controls.Add(this.faceDetectionTile);
+            this.Controls.Add(this.textDetectionTile);
+            this.Controls.Add(this.shapeDetectionTile);
+            this.Controls.Add(this.morphologyTile);
+            this.Controls.Add(this.imageHistogramTile);
+            this.Controls.Add(this.imageBinrizationTile);
+            this.Controls.Add(this.edgeDetectionTile);
             this.Controls.Add(this.slidesPicBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -192,13 +231,13 @@
 
         #endregion
         private System.Windows.Forms.PictureBox slidesPicBox;
-        private MetroFramework.Controls.MetroButton metroButton8;
-        private MetroFramework.Controls.MetroButton metroButton7;
-        private MetroFramework.Controls.MetroButton metroButton6;
-        private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroTile edgeDetectionTile;
+        private MetroFramework.Controls.MetroTile imageBinrizationTile;
+        private MetroFramework.Controls.MetroTile imageHistogramTile;
+        private MetroFramework.Controls.MetroTile morphologyTile;
+        private MetroFramework.Controls.MetroTile shapeDetectionTile;
+        private MetroFramework.Controls.MetroTile textDetectionTile;
+        private MetroFramework.Controls.MetroTile faceDetectionTile;
+        private MetroFramework.Controls.MetroTile handGestureTile;
     }
 }

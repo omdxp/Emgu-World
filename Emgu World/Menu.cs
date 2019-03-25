@@ -135,6 +135,18 @@ namespace Emgu_World
             }
         }
 
+        private void howToToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose between using pictures or camera\n" +
+                "- To choose picture go to File -> Open -> Picture\n" +
+                "- To choose camera go to File -> Open -> Camera\n" +
+                "- To change Edge threshold parameters for both picture or camera,\n" +
+                "you click on the button 'Detect Edges' when chosing a picture\n" +
+                "- It's a better practice to stop the camera when finished",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
         #endregion
 
         #region Image Binarization
@@ -160,6 +172,16 @@ namespace Emgu_World
             Image<Gray, byte> imgBinary = new Image<Gray, byte>(imgOutput.Width, imgOutput.Height, new Gray(0));
             CvInvoke.Threshold(imgOutput, imgBinary, 50, 255, Emgu.CV.CvEnum.ThresholdType.Otsu); 
             ib_imgOutputPicBox.Image = imgBinary.Bitmap;
+        }
+
+        private void toolStripMenuItem43_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose a picture to binarize\n" +
+                "- To choose a picture go to File -> Open\n" +
+                "- Click on 'Binarize' button to binarize the picture",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
         }
         #endregion
 
@@ -229,6 +251,17 @@ namespace Emgu_World
                 return;
             }
 
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose a picture to show its histogram\n" +
+                "- To choose a picture go to File -> Open\n" +
+                "- Choos between channels (Red, Green, Blue)\n" +
+                "- Click on 'Histogram' button to show a histogram for picture",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
         }
         #endregion
 
@@ -362,6 +395,16 @@ namespace Emgu_World
             }
             imgOutput = imgInput.Convert<Gray, byte>().ThresholdBinary(new Gray(120), new Gray(255)).Dilate(2);
             m_imgOutputPicBox.Image = imgOutput.Bitmap;
+        }
+
+        private void toolStripMenuItem19_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose a picture to show different morphological processing operations\n" +
+                "- To choose a picture go to File -> Open\n" +
+                "- Click on different buttons to show output picture",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
         }
         #endregion
 
@@ -630,6 +673,19 @@ namespace Emgu_World
             }
         }
 
+        private void toolStripMenuItem47_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose on using picture or camera\n" +
+                "- To choose a picture go to File -> Open -> Picture\n" +
+                "- To choose camera go to File -> Open -> Camera\n" +
+                "- When choosing a picture click on 'Detect Shape' button to see output image\n" +
+                "- When using camera it will detect and show output image automatically\n" +
+                "- It's a better practice if you stop camera when finished",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
+
         #endregion
 
         #region Text Detection
@@ -766,6 +822,19 @@ namespace Emgu_World
                 td_imgOutputPicBox.Image = null;
             }
         }
+
+        private void toolStripMenuItem49_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose on using picture or camera\n" +
+                "- To choose a picture go to File -> Open -> Picture\n" +
+                "- To choose camera go to File -> Open -> Camera\n" +
+                "- When choosing a picture click on 'Detect Text' button to see output image\n" +
+                "- When using camera it will detect and show output image automatically\n" +
+                "- It's a better practice if you stop camera when finished",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
         #endregion
 
         #region Face Detection
@@ -867,9 +936,30 @@ namespace Emgu_World
                 fd_imgOutputPicBox.Image = null;
             }
         }
+
+        private void toolStripMenuItem51_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "You can choose on using picture or camera\n" +
+                "- To choose a picture go to File -> Open -> Picture\n" +
+                "- To choose camera go to File -> Open -> Camera\n" +
+                "- When choosing a picture click on 'Detect Face' button to see output image\n" +
+                "- When using camera it will detect and show output image automatically\n" +
+                "- It's a better practice if you stop camera when finished",
+                "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
         #endregion
 
         #region Hand Gesture
+        private void toolStripMenuItem53_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "\n- To open camera go to File -> Open Camera\n" +
+                "- Text will be shown when a gesture is detected\n" +
+                "- It's a better practice to stop camera when finished", "How To?",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+        }
         #endregion
 
         #region Exit & Other events

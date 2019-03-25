@@ -128,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Hello.resx">
       <DependentUpon>Hello.cs</DependentUpon>
@@ -182,6 +183,13 @@
     <Content Include="Slides\In Fields of Clover.jpg" />
     <Content Include="Slides\landscaping-sydney-garden-960x720.jpg" />
     <Content Include="Slides\summer-landscaping-sydney-960x720.jpg" />
+    <Content Include="Tile Images\edgeDetection.PNG" />
+    <Content Include="Tile Images\faceDetection.PNG" />
+    <Content Include="Tile Images\imageBinarization.PNG" />
+    <Content Include="Tile Images\imageHistogram.PNG" />
+    <Content Include="Tile Images\morphology.PNG" />
+    <Content Include="Tile Images\shapeDetection.PNG" />
+    <Content Include="Tile Images\textDetection.PNG" />
     <Content Include="users.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

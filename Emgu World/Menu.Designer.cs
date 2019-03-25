@@ -187,7 +187,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage8);
             this.metroTabControl1.Location = new System.Drawing.Point(24, 64);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 5;
+            this.metroTabControl1.SelectedIndex = 7;
             this.metroTabControl1.Size = new System.Drawing.Size(999, 550);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -280,27 +280,27 @@
             this.pictureToolStripMenuItem,
             this.cameraToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // pictureToolStripMenuItem
             // 
             this.pictureToolStripMenuItem.Name = "pictureToolStripMenuItem";
-            this.pictureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pictureToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.pictureToolStripMenuItem.Text = "Picture";
             this.pictureToolStripMenuItem.Click += new System.EventHandler(this.pictureToolStripMenuItem_Click);
             // 
             // cameraToolStripMenuItem
             // 
             this.cameraToolStripMenuItem.Name = "cameraToolStripMenuItem";
-            this.cameraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cameraToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.cameraToolStripMenuItem.Text = "Camera";
             this.cameraToolStripMenuItem.Click += new System.EventHandler(this.cameraToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -318,6 +318,7 @@
             this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
             this.howToToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.howToToolStripMenuItem.Text = "How To?";
+            this.howToToolStripMenuItem.Click += new System.EventHandler(this.howToToolStripMenuItem_Click);
             // 
             // creatorToolStripMenuItem
             // 
@@ -422,6 +423,7 @@
             this.toolStripMenuItem43.Name = "toolStripMenuItem43";
             this.toolStripMenuItem43.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem43.Text = "How To?";
+            this.toolStripMenuItem43.Click += new System.EventHandler(this.toolStripMenuItem43_Click);
             // 
             // toolStripMenuItem44
             // 
@@ -565,6 +567,7 @@
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem11.Text = "How To?";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
@@ -773,6 +776,7 @@
             this.toolStripMenuItem19.Name = "toolStripMenuItem19";
             this.toolStripMenuItem19.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem19.Text = "How To?";
+            this.toolStripMenuItem19.Click += new System.EventHandler(this.toolStripMenuItem19_Click);
             // 
             // toolStripMenuItem20
             // 
@@ -906,6 +910,7 @@
             this.toolStripMenuItem47.Name = "toolStripMenuItem47";
             this.toolStripMenuItem47.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem47.Text = "How To?";
+            this.toolStripMenuItem47.Click += new System.EventHandler(this.toolStripMenuItem47_Click);
             // 
             // toolStripMenuItem48
             // 
@@ -1039,6 +1044,7 @@
             this.toolStripMenuItem49.Name = "toolStripMenuItem49";
             this.toolStripMenuItem49.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem49.Text = "How To?";
+            this.toolStripMenuItem49.Click += new System.EventHandler(this.toolStripMenuItem49_Click);
             // 
             // toolStripMenuItem50
             // 
@@ -1134,27 +1140,27 @@
             this.toolStripMenuItem33,
             this.toolStripMenuItem34});
             this.toolStripMenuItem32.Name = "toolStripMenuItem32";
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem32.Size = new System.Drawing.Size(103, 22);
             this.toolStripMenuItem32.Text = "Open";
             // 
             // toolStripMenuItem33
             // 
             this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem33.Text = "Picture";
             this.toolStripMenuItem33.Click += new System.EventHandler(this.toolStripMenuItem33_Click);
             // 
             // toolStripMenuItem34
             // 
             this.toolStripMenuItem34.Name = "toolStripMenuItem34";
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(115, 22);
             this.toolStripMenuItem34.Text = "Camera";
             this.toolStripMenuItem34.Click += new System.EventHandler(this.toolStripMenuItem34_Click);
             // 
             // toolStripMenuItem35
             // 
             this.toolStripMenuItem35.Name = "toolStripMenuItem35";
-            this.toolStripMenuItem35.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem35.Size = new System.Drawing.Size(103, 22);
             this.toolStripMenuItem35.Text = "Exit";
             this.toolStripMenuItem35.Click += new System.EventHandler(this.toolStripMenuItem35_Click);
             // 
@@ -1172,6 +1178,7 @@
             this.toolStripMenuItem51.Name = "toolStripMenuItem51";
             this.toolStripMenuItem51.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem51.Text = "How To?";
+            this.toolStripMenuItem51.Click += new System.EventHandler(this.toolStripMenuItem51_Click);
             // 
             // toolStripMenuItem52
             // 
@@ -1274,6 +1281,7 @@
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
             this.toolStripMenuItem53.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem53.Text = "How To?";
+            this.toolStripMenuItem53.Click += new System.EventHandler(this.toolStripMenuItem53_Click);
             // 
             // toolStripMenuItem54
             // 
