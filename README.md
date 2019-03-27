@@ -9,6 +9,7 @@ A GUI that contains the basic image processing operations using Emgu CV.
 # About me
 > Omar Belghaouti
 >> Master student who always has interset in programming in general
+---
 >> First line of code was :
 ``` c
 printf("Hello, World!");
