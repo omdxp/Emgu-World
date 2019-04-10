@@ -1215,6 +1215,7 @@
             this.hg_stopCameraButt.TabIndex = 24;
             this.hg_stopCameraButt.Text = "Stop Camera";
             this.hg_stopCameraButt.UseSelectable = true;
+            this.hg_stopCameraButt.Click += new System.EventHandler(this.hg_stopCameraButt_Click);
             // 
             // hg_imgOutputPicBox
             // 
@@ -1257,13 +1258,14 @@
             // toolStripMenuItem38
             // 
             this.toolStripMenuItem38.Name = "toolStripMenuItem38";
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(147, 22);
+            this.toolStripMenuItem38.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem38.Text = "Open Camera";
+            this.toolStripMenuItem38.Click += new System.EventHandler(this.toolStripMenuItem38_Click);
             // 
             // toolStripMenuItem41
             // 
             this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(147, 22);
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem41.Text = "Exit";
             this.toolStripMenuItem41.Click += new System.EventHandler(this.toolStripMenuItem41_Click);
             // 
@@ -1279,14 +1281,14 @@
             // toolStripMenuItem53
             // 
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem53.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem53.Text = "How To?";
             this.toolStripMenuItem53.Click += new System.EventHandler(this.toolStripMenuItem53_Click);
             // 
             // toolStripMenuItem54
             // 
             this.toolStripMenuItem54.Name = "toolStripMenuItem54";
-            this.toolStripMenuItem54.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem54.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem54.Text = "Creator";
             this.toolStripMenuItem54.Click += new System.EventHandler(this.toolStripMenuItem54_Click);
             // 

@@ -103,16 +103,6 @@ namespace Emgu_World.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap joseph_barrientos_49318_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("joseph-barrientos-49318-unsplash", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap morphology {
             get {
                 object obj = ResourceManager.GetObject("morphology", resourceCulture);

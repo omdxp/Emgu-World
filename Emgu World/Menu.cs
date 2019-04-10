@@ -38,11 +38,6 @@ namespace Emgu_World
             TurnVisibilityOffToAllButtons();
         }
 
-        public void ChangeTab(int tabNo)
-        {
-            metroTabControl1.SelectTab(tabNo);
-        }
-
         #region Edge Detection
         double thresh = 50.0, threshlink = 20.0;
 
@@ -1026,7 +1021,7 @@ namespace Emgu_World
         }
         #endregion
 
-        #region Face Detection
+        #region Face Detection  
 
         private void toolStripMenuItem33_Click(object sender, EventArgs e)
         {
@@ -1169,6 +1164,62 @@ namespace Emgu_World
         #endregion
 
         #region Hand Gesture
+        
+
+        private void toolStripMenuItem38_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (capture == null)
+                {
+                    imgInput = null;
+                    hg_imgInputPicBox.Image = null;
+                    hg_imgOutputPicBox.Image = null;
+                    hg_stopCameraButt.Visible = true;
+                    capture = new VideoCapture(0);
+                }
+                capture.ImageGrabbed += Capture_ImageGrabbed4;
+                capture.Start();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void Capture_ImageGrabbed4(object sender, EventArgs e)
+        {
+            try
+            {
+                Mat m = new Mat();
+                capture.Retrieve(m);
+                hg_imgInputPicBox.Image = m.ToImage<Bgr, byte>().Bitmap;
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void hg_stopCameraButt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (capture != null)
+                {
+                    capture.Stop();
+                    capture.Dispose();
+                    capture = null;
+                    hg_imgInputPicBox.Image = null;
+                    hg_imgOutputPicBox.Image = null;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void toolStripMenuItem53_Click(object sender, EventArgs e)
         {
             MetroMessageBox.Show(this, "\n- To open camera go to File -> Open Camera\n" +
@@ -1387,6 +1438,11 @@ namespace Emgu_World
             {
                 
             }
+        }
+
+        public void ChangeTab(int tabNo)
+        {
+            metroTabControl1.SelectTab(tabNo);
         }
 
         /// <summary>

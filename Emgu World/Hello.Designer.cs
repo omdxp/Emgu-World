@@ -68,7 +68,6 @@
             this.faceDetectionTile.TabIndex = 16;
             this.faceDetectionTile.Text = "Face Detection";
             this.faceDetectionTile.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.faceDetectionTile.TileImage = global::Emgu_World.Properties.Resources.faceDetection;
             this.faceDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.faceDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.faceDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
@@ -87,7 +86,6 @@
             this.textDetectionTile.Size = new System.Drawing.Size(266, 70);
             this.textDetectionTile.TabIndex = 15;
             this.textDetectionTile.Text = "Text Detection";
-            this.textDetectionTile.TileImage = global::Emgu_World.Properties.Resources.textDetection;
             this.textDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.textDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.textDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
@@ -105,7 +103,6 @@
             this.shapeDetectionTile.Size = new System.Drawing.Size(279, 143);
             this.shapeDetectionTile.TabIndex = 14;
             this.shapeDetectionTile.Text = "Shape Detection";
-            this.shapeDetectionTile.TileImage = global::Emgu_World.Properties.Resources.shapeDetection;
             this.shapeDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.shapeDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.shapeDetectionTile.UseCustomForeColor = true;
@@ -123,7 +120,6 @@
             this.morphologyTile.Size = new System.Drawing.Size(279, 299);
             this.morphologyTile.TabIndex = 13;
             this.morphologyTile.Text = "Morphology";
-            this.morphologyTile.TileImage = global::Emgu_World.Properties.Resources.morphology;
             this.morphologyTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.morphologyTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.morphologyTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
@@ -143,7 +139,6 @@
             this.imageHistogramTile.TabIndex = 12;
             this.imageHistogramTile.Text = "Image Histogram";
             this.imageHistogramTile.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.imageHistogramTile.TileImage = global::Emgu_World.Properties.Resources.imageHistogram;
             this.imageHistogramTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.imageHistogramTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.imageHistogramTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
@@ -163,7 +158,6 @@
             this.imageBinrizationTile.TabIndex = 11;
             this.imageBinrizationTile.Text = "Image Binarization";
             this.imageBinrizationTile.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.imageBinrizationTile.TileImage = global::Emgu_World.Properties.Resources.imageBinarization;
             this.imageBinrizationTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.imageBinrizationTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.imageBinrizationTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
@@ -183,7 +177,6 @@
             this.edgeDetectionTile.TabIndex = 10;
             this.edgeDetectionTile.Text = "Edge Detection";
             this.edgeDetectionTile.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.edgeDetectionTile.TileImage = global::Emgu_World.Properties.Resources.edgeDetection;
             this.edgeDetectionTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.edgeDetectionTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.edgeDetectionTile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
