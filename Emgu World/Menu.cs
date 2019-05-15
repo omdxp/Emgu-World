@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
-using MetroFramework.Controls;
-using MetroFramework.Properties;
 using Emgu.CV;
 using Emgu.CV.Structure;
 using Emgu.CV.Util;
 using System.IO;
+using DlibDotNet;
 
 namespace Emgu_World
 {
@@ -389,10 +384,10 @@ namespace Emgu_World
                 if (imgInput == null)
                     return;
                 // -1 -1 for central element
-                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new Point(-1, -1));
+                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new System.Drawing.Point(-1, -1));
                 m_imgOutputPicBox.Image = imgInput.MorphologyEx(Emgu.CV.CvEnum.MorphOp.Open,
                         kernel,
-                        new Point(-1, -1),
+                        new System.Drawing.Point(-1, -1),
                         1,
                         Emgu.CV.CvEnum.BorderType.Default,
                         new MCvScalar(1.0)).Bitmap;
@@ -410,11 +405,11 @@ namespace Emgu_World
                 if (imgInput == null)
                     return;
                 // -1 -1 for central element
-                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new Point(-1, -1));
+                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new System.Drawing.Point(-1, -1));
                 m_imgOutputPicBox.Image = imgInput
                     .MorphologyEx(Emgu.CV.CvEnum.MorphOp.Close,
                         kernel,
-                        new Point(-1, -1),
+                        new System.Drawing.Point(-1, -1),
                         1,
                         Emgu.CV.CvEnum.BorderType.Default,
                         new MCvScalar(1.0)).Bitmap;
@@ -432,11 +427,11 @@ namespace Emgu_World
                 if (imgInput == null)
                     return;
                 // -1 -1 for central element
-                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new Point(-1, -1));
+                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new System.Drawing.Point(-1, -1));
                 m_imgOutputPicBox.Image = imgInput
                     .MorphologyEx(Emgu.CV.CvEnum.MorphOp.Gradient,
                         kernel,
-                        new Point(-1, -1),
+                        new System.Drawing.Point(-1, -1),
                         1,
                         Emgu.CV.CvEnum.BorderType.Default,
                         new MCvScalar(1.0)).Bitmap;
@@ -454,11 +449,11 @@ namespace Emgu_World
                 if (imgInput == null)
                     return;
                 // -1 -1 for central element
-                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new Point(-1, -1));
+                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new System.Drawing.Point(-1, -1));
                 m_imgOutputPicBox.Image = imgInput
                     .MorphologyEx(Emgu.CV.CvEnum.MorphOp.Tophat,
                         kernel,
-                        new Point(-1, -1),
+                        new System.Drawing.Point(-1, -1),
                         1,
                         Emgu.CV.CvEnum.BorderType.Default,
                         new MCvScalar(1.0)).Bitmap;
@@ -476,11 +471,11 @@ namespace Emgu_World
                 if (imgInput == null)
                     return;
                 // -1 -1 for central element
-                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new Point(-1, -1));
+                Mat kernel = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(5, 5), new System.Drawing.Point(-1, -1));
                 m_imgOutputPicBox.Image = imgInput.Convert<Gray, byte>()
                     .MorphologyEx(Emgu.CV.CvEnum.MorphOp.Blackhat,
                         kernel,
-                        new Point(-1, -1),
+                        new System.Drawing.Point(-1, -1),
                         1,
                         Emgu.CV.CvEnum.BorderType.Default,
                         new MCvScalar(1.0)).Bitmap;
@@ -602,7 +597,7 @@ namespace Emgu_World
                     if (approx.Size == 3) // Triangle
                     {
                         CvInvoke.PutText(imgInput, "Triangle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -612,12 +607,12 @@ namespace Emgu_World
                     if (approx.Size == 4) // Rectangle
                     {
                         // Check for Square
-                        Rectangle rect = CvInvoke.BoundingRectangle(contours[i]);
+                        System.Drawing.Rectangle rect = CvInvoke.BoundingRectangle(contours[i]);
                         double ar = (double)rect.Width / rect.Height;
                         if (ar >= .95 && ar <= 1.05)
                         {
                             CvInvoke.PutText(imgInput, "Square",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -626,7 +621,7 @@ namespace Emgu_World
                         else
                         {
                             CvInvoke.PutText(imgInput, "Rectangle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -637,7 +632,7 @@ namespace Emgu_World
                     if (approx.Size == 5) // Pentagon
                     {
                         CvInvoke.PutText(imgInput, "Pentagon",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -647,7 +642,7 @@ namespace Emgu_World
                     if (approx.Size == 6) // Hexagon
                     {
                         CvInvoke.PutText(imgInput, "Hexagon",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -657,7 +652,7 @@ namespace Emgu_World
                     if (approx.Size > 6) // Circle
                     {
                         CvInvoke.PutText(imgInput, "Circle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -732,7 +727,7 @@ namespace Emgu_World
                     if (approx.Size == 3) // Triangle
                     {
                         CvInvoke.PutText(m.ToImage<Gray, byte>(), "Triangle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -742,12 +737,12 @@ namespace Emgu_World
                     if (approx.Size == 4) // Rectangle
                     {
                         // Check for Square
-                        Rectangle rect = CvInvoke.BoundingRectangle(contours[i]);
+                        System.Drawing.Rectangle rect = CvInvoke.BoundingRectangle(contours[i]);
                         double ar = (double)rect.Width / rect.Height;
                         if (ar >= .95 && ar <= 1.05)
                         {
                             CvInvoke.PutText(m.ToImage<Gray, byte>(), "Square",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -756,7 +751,7 @@ namespace Emgu_World
                         else
                         {
                             CvInvoke.PutText(m.ToImage<Gray, byte>(), "Rectangle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -767,7 +762,7 @@ namespace Emgu_World
                     if (approx.Size == 5) // Pentagon
                     {
                         CvInvoke.PutText(m.ToImage<Gray, byte>(), "Pentagon",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -777,7 +772,7 @@ namespace Emgu_World
                     if (approx.Size == 6) // Hexagon
                     {
                         CvInvoke.PutText(m.ToImage<Gray, byte>(), "Hexagon",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -787,7 +782,7 @@ namespace Emgu_World
                     if (approx.Size > 6) // Circle
                     {
                         CvInvoke.PutText(m.ToImage<Gray, byte>(), "Circle",
-                            new Point(x, y),
+                            new System.Drawing.Point(x, y),
                             Emgu.CV.CvEnum.FontFace.HersheySimplex,
                             .5,
                             new MCvScalar(255, 0, 0),
@@ -922,11 +917,11 @@ namespace Emgu_World
 
                 // Dilation
                 Mat SE = CvInvoke.GetStructuringElement(Emgu.CV.CvEnum.ElementShape.Rectangle, new Size(10, 2),
-                    new Point(-1, -1));
+                    new System.Drawing.Point(-1, -1));
 
                 sobel = sobel.MorphologyEx(Emgu.CV.CvEnum.MorphOp.Dilate,
                     SE,
-                    new Point(-1, -1),
+                    new System.Drawing.Point(-1, -1),
                     1,
                     Emgu.CV.CvEnum.BorderType.Reflect,
                     new MCvScalar(255));
@@ -941,11 +936,11 @@ namespace Emgu_World
                     Emgu.CV.CvEnum.ChainApproxMethod.ChainApproxSimple);
 
                 // Geometrical constraints
-                List<Rectangle> list = new List<Rectangle>();
+                List<System.Drawing.Rectangle> list = new List<System.Drawing.Rectangle>();
 
                 for (int i = 0; i < contours.Size; i++)
                 {
-                    Rectangle brect = CvInvoke.BoundingRectangle(contours[i]);
+                    System.Drawing.Rectangle brect = CvInvoke.BoundingRectangle(contours[i]);
 
                     double ar = brect.Width / brect.Height; // aspect ration (width > height)
                     if (ar > 2 && brect.Width > 30 && brect.Height > 8 && brect.Height < 100)
@@ -1116,7 +1111,7 @@ namespace Emgu_World
                 CascadeClassifier classifierFace = new CascadeClassifier(facePath);
 
                 var imgGray = img.Convert<Gray, byte>().Clone();
-                Rectangle[] faces = classifierFace.DetectMultiScale(imgGray, 1.1, 2);
+                System.Drawing.Rectangle[] faces = classifierFace.DetectMultiScale(imgGray, 1.1, 2);
                 foreach (var face in faces)
                 {
                     img.Draw(face, new Bgr(255, 0, 0));
@@ -1164,7 +1159,6 @@ namespace Emgu_World
         #endregion
 
         #region Hand Gesture
-        
 
         private void toolStripMenuItem38_Click(object sender, EventArgs e)
         {
@@ -1193,7 +1187,21 @@ namespace Emgu_World
             {
                 Mat m = new Mat();
                 capture.Retrieve(m);
-                hg_imgInputPicBox.Image = m.ToImage<Bgr, byte>().Bitmap;
+                Image<Bgr, byte> img = m.ToImage<Bgr, byte>();
+
+                // Load svm model
+                var tmp = new ScanFHogPyramid<PyramidDown, DefaultFHogFeatureExtractor>(6);
+                var detector = new ObjectDetector<ScanFHogPyramid<PyramidDown, 
+                    DefaultFHogFeatureExtractor>>(tmp);
+                detector.Deserialize("hand.svm");
+
+                // Detecting hand
+                int rscale = 2;
+                Mat ft = new Mat();
+                CvInvoke.Resize(m, ft, new Size(m.Width / rscale, m.Height / rscale));
+                hg_imgInputPicBox.Image = m.Bitmap;
+                hg_imgOutputPicBox.Image = ft.Bitmap;
+
             }
             catch (Exception)
             {
