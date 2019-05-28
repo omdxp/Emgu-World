@@ -195,6 +195,7 @@
     <Content Include="Slides\summer-landscaping-sydney-960x720.jpg" />
     <Content Include="Tile Images\edgeDetection.PNG" />
     <Content Include="Tile Images\faceDetection.PNG" />
+    <Content Include="Tile Images\handDetection.PNG" />
     <Content Include="Tile Images\imageBinarization.PNG" />
     <Content Include="Tile Images\imageHistogram.PNG" />
     <Content Include="Tile Images\morphology.PNG" />

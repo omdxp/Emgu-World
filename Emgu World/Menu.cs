@@ -1167,11 +1167,10 @@ namespace Emgu_World
                 if (capture == null)
                 {
                     imgInput = null;
-                    hg_imgInputPicBox.Image = null;
-                    hg_imgOutputPicBox.Image = null;
                     hg_stopCameraButt.Visible = true;
                     capture = new VideoCapture(0);
                 }
+
                 capture.ImageGrabbed += Capture_ImageGrabbed4;
                 capture.Start();
             }
@@ -1185,23 +1184,33 @@ namespace Emgu_World
         {
             try
             {
-                Mat m = new Mat();
-                capture.Retrieve(m);
-                Image<Bgr, byte> img = m.ToImage<Bgr, byte>();
+                using (var win = new ImageWindow())
+                {
+                    using (var tmp = new ScanFHogPyramid<PyramidDown, DefaultFHogFeatureExtractor>(6))
+                    using (var detector = new ObjectDetector<ScanFHogPyramid<PyramidDown, DefaultFHogFeatureExtractor>>(tmp))
+                    {
+                        detector.Deserialize("hand.svm");
+                        while (!win.IsClosed())
+                        {
+                            var temp = new Mat();
+                            capture.Read(temp);
 
-                // Load svm model
-                var tmp = new ScanFHogPyramid<PyramidDown, DefaultFHogFeatureExtractor>(6);
-                var detector = new ObjectDetector<ScanFHogPyramid<PyramidDown, 
-                    DefaultFHogFeatureExtractor>>(tmp);
-                detector.Deserialize("hand.svm");
+                            var array = new byte[temp.Width * temp.Height * temp.ElementSize];
+                            temp.CopyTo(array);
 
-                // Detecting hand
-                int rscale = 2;
-                Mat ft = new Mat();
-                CvInvoke.Resize(m, ft, new Size(m.Width / rscale, m.Height / rscale));
-                hg_imgInputPicBox.Image = m.Bitmap;
-                hg_imgOutputPicBox.Image = ft.Bitmap;
+                            using (var cimg = Dlib.LoadImageData<RgbPixel>(array, (uint)temp.Height, (uint)temp.Width, (uint)(temp.Width * temp.ElementSize)))
+                            {
+                                // Detect hands
+                                var dets = detector.Operator(new DlibDotNet.Matrix<RgbPixel>(cimg));
+                                // Display it all on the screen
+                                win.ClearOverlay();
+                                win.SetImage(cimg);
+                                win.AddOverlay(dets, new RgbPixel { Green = 255 });
+                            }
 
+                        }
+                    }
+                }
             }
             catch (Exception)
             {
@@ -1218,8 +1227,6 @@ namespace Emgu_World
                     capture.Stop();
                     capture.Dispose();
                     capture = null;
-                    hg_imgInputPicBox.Image = null;
-                    hg_imgOutputPicBox.Image = null;
                 }
             }
             catch (Exception)
@@ -1474,8 +1481,6 @@ namespace Emgu_World
                 td_imgOutputPicBox.Image = null;
                 fd_imgInputPicBox.Image = null;
                 fd_imgOutputPicBox.Image = null;
-                hg_imgInputPicBox.Image = null;
-                hg_imgOutputPicBox.Image = null;
             }
             catch (Exception)
             {

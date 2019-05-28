@@ -139,4 +139,7 @@
   <data name="faceDetection" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Tile Images\faceDetection.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="handDetection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Tile Images\handDetection.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
