@@ -49,7 +49,7 @@
             this.handGestureTile.Name = "handGestureTile";
             this.handGestureTile.Size = new System.Drawing.Size(191, 132);
             this.handGestureTile.TabIndex = 17;
-            this.handGestureTile.Text = "Hand Gesture";
+            this.handGestureTile.Text = "Hand Detection";
             this.handGestureTile.TileImage = global::Emgu_World.Properties.Resources.handDetection;
             this.handGestureTile.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.handGestureTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
