@@ -54,7 +54,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(0);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -69,7 +69,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(1);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -84,7 +84,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(2);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -99,7 +99,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(3);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -114,7 +114,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(4);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -129,7 +129,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(5);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -144,7 +144,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(6);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
@@ -159,7 +159,7 @@ namespace Emgu_World
                 menu = new Menu();
                 menu.ChangeTab(7);
                 menu.Show();
-                Close();
+                Hide();
             }
             catch (Exception)
             {
