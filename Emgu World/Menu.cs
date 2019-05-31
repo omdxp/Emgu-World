@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using MetroFramework;
 using MetroFramework.Forms;
 using Emgu.CV;
 using Emgu.CV.Structure;
 using Emgu.CV.Util;
-using System.IO;
 using DlibDotNet;
 
 namespace Emgu_World
@@ -1203,6 +1203,7 @@ namespace Emgu_World
                                 // Detect hands
                                 var dets = detector.Operator(new DlibDotNet.Matrix<RgbPixel>(cimg));
                                 // Display it all on the screen
+                                //var img = Array2D<RgbPixel>.ToBitmap();
                                 win.ClearOverlay();
                                 win.SetImage(cimg);
                                 win.AddOverlay(dets, new RgbPixel { Green = 255 });
@@ -1353,7 +1354,7 @@ namespace Emgu_World
         {
             MetroMessageBox.Show(this, "\nOmar Belghaouti\n\n" +
                 "Master student\n" +
-                "Abou Bekr Belkaid University", "Creator",
+                "Abou Bekr Belkaid University", "Developer",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }

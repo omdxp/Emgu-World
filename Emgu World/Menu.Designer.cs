@@ -33,6 +33,8 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.ed_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.ed_detectEdgeButt = new MetroFramework.Controls.MetroButton();
+            this.ed_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.ed_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +46,8 @@
             this.creatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.ib_binarizeButt = new MetroFramework.Controls.MetroButton();
+            this.ib_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.ib_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +61,7 @@
             this.ih_redRadioButt = new MetroFramework.Controls.MetroRadioButton();
             this.histogramBox = new Emgu.CV.UI.HistogramBox();
             this.ih_histogramButt = new MetroFramework.Controls.MetroButton();
+            this.ih_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,6 +79,8 @@
             this.m_openButt = new MetroFramework.Controls.MetroButton();
             this.m_dilationButt = new MetroFramework.Controls.MetroButton();
             this.m_erosionButt = new MetroFramework.Controls.MetroButton();
+            this.m_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.m_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +91,8 @@
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.sd_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.sd_DetectShapeButt = new MetroFramework.Controls.MetroButton();
+            this.sd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.sd_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip5 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem22 = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,6 +105,8 @@
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
             this.td_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.td_DetectTextButt = new MetroFramework.Controls.MetroButton();
+            this.td_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.td_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip6 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem25 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem26 = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,6 +119,8 @@
             this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
             this.fd_stopCameraButt = new MetroFramework.Controls.MetroButton();
             this.fd_detectFaceButt = new MetroFramework.Controls.MetroButton();
+            this.fd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
+            this.fd_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.menuStrip7 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem32 = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,49 +139,36 @@
             this.toolStripMenuItem42 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem53 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem54 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ed_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.ed_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.ib_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.ib_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.ih_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.m_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.m_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.sd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.sd_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.td_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.td_imgInputPicBox = new System.Windows.Forms.PictureBox();
-            this.fd_imgOutputPicBox = new System.Windows.Forms.PictureBox();
-            this.fd_imgInputPicBox = new System.Windows.Forms.PictureBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ed_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ed_imgInputPicBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).BeginInit();
             this.menuStrip3.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).BeginInit();
             this.menuStrip4.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).BeginInit();
             this.menuStrip5.SuspendLayout();
             this.metroTabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).BeginInit();
             this.menuStrip6.SuspendLayout();
             this.metroTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).BeginInit();
             this.menuStrip7.SuspendLayout();
             this.metroTabPage8.SuspendLayout();
             this.menuStrip8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ed_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ed_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -183,7 +183,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage8);
             this.metroTabControl1.Location = new System.Drawing.Point(24, 64);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 7;
             this.metroTabControl1.Size = new System.Drawing.Size(999, 550);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -231,6 +231,24 @@
             this.ed_detectEdgeButt.Text = "Detect Edges";
             this.ed_detectEdgeButt.UseSelectable = true;
             this.ed_detectEdgeButt.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // ed_imgOutputPicBox
+            // 
+            this.ed_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.ed_imgOutputPicBox.Name = "ed_imgOutputPicBox";
+            this.ed_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ed_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ed_imgOutputPicBox.TabIndex = 5;
+            this.ed_imgOutputPicBox.TabStop = false;
+            // 
+            // ed_imgInputPicBox
+            // 
+            this.ed_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.ed_imgInputPicBox.Name = "ed_imgInputPicBox";
+            this.ed_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ed_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ed_imgInputPicBox.TabIndex = 4;
+            this.ed_imgInputPicBox.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -294,15 +312,15 @@
             // howToToolStripMenuItem
             // 
             this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
-            this.howToToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.howToToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.howToToolStripMenuItem.Text = "How To?";
             this.howToToolStripMenuItem.Click += new System.EventHandler(this.howToToolStripMenuItem_Click);
             // 
             // creatorToolStripMenuItem
             // 
             this.creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
-            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.creatorToolStripMenuItem.Text = "Creator";
+            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.creatorToolStripMenuItem.Text = "Developer";
             this.creatorToolStripMenuItem.Click += new System.EventHandler(this.creatorToolStripMenuItem_Click);
             // 
             // metroTabPage2
@@ -334,6 +352,24 @@
             this.ib_binarizeButt.Text = "Binarize";
             this.ib_binarizeButt.UseSelectable = true;
             this.ib_binarizeButt.Click += new System.EventHandler(this.ib_binarizeButt_Click);
+            // 
+            // ib_imgOutputPicBox
+            // 
+            this.ib_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.ib_imgOutputPicBox.Name = "ib_imgOutputPicBox";
+            this.ib_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ib_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ib_imgOutputPicBox.TabIndex = 8;
+            this.ib_imgOutputPicBox.TabStop = false;
+            // 
+            // ib_imgInputPicBox
+            // 
+            this.ib_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.ib_imgInputPicBox.Name = "ib_imgInputPicBox";
+            this.ib_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ib_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ib_imgInputPicBox.TabIndex = 7;
+            this.ib_imgInputPicBox.TabStop = false;
             // 
             // menuStrip2
             // 
@@ -381,15 +417,15 @@
             // toolStripMenuItem43
             // 
             this.toolStripMenuItem43.Name = "toolStripMenuItem43";
-            this.toolStripMenuItem43.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem43.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem43.Text = "How To?";
             this.toolStripMenuItem43.Click += new System.EventHandler(this.toolStripMenuItem43_Click);
             // 
             // toolStripMenuItem44
             // 
             this.toolStripMenuItem44.Name = "toolStripMenuItem44";
-            this.toolStripMenuItem44.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem44.Text = "Creator";
+            this.toolStripMenuItem44.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem44.Text = "Developer";
             this.toolStripMenuItem44.Click += new System.EventHandler(this.toolStripMenuItem44_Click);
             // 
             // metroTabPage3
@@ -470,6 +506,15 @@
             this.ih_histogramButt.UseSelectable = true;
             this.ih_histogramButt.Click += new System.EventHandler(this.ih_histogramButt_Click);
             // 
+            // ih_imgInputPicBox
+            // 
+            this.ih_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.ih_imgInputPicBox.Name = "ih_imgInputPicBox";
+            this.ih_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.ih_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ih_imgInputPicBox.TabIndex = 10;
+            this.ih_imgInputPicBox.TabStop = false;
+            // 
             // menuStrip3
             // 
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -516,15 +561,15 @@
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem11.Text = "How To?";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem12.Text = "Creator";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem12.Text = "Developer";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
             // metroTabPage4
@@ -661,6 +706,24 @@
             this.m_erosionButt.UseSelectable = true;
             this.m_erosionButt.Click += new System.EventHandler(this.m_erosionButt_Click);
             // 
+            // m_imgOutputPicBox
+            // 
+            this.m_imgOutputPicBox.Location = new System.Drawing.Point(580, 27);
+            this.m_imgOutputPicBox.Name = "m_imgOutputPicBox";
+            this.m_imgOutputPicBox.Size = new System.Drawing.Size(408, 437);
+            this.m_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.m_imgOutputPicBox.TabIndex = 13;
+            this.m_imgOutputPicBox.TabStop = false;
+            // 
+            // m_imgInputPicBox
+            // 
+            this.m_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.m_imgInputPicBox.Name = "m_imgInputPicBox";
+            this.m_imgInputPicBox.Size = new System.Drawing.Size(406, 437);
+            this.m_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.m_imgInputPicBox.TabIndex = 12;
+            this.m_imgInputPicBox.TabStop = false;
+            // 
             // menuStrip4
             // 
             this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -707,15 +770,15 @@
             // toolStripMenuItem19
             // 
             this.toolStripMenuItem19.Name = "toolStripMenuItem19";
-            this.toolStripMenuItem19.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem19.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem19.Text = "How To?";
             this.toolStripMenuItem19.Click += new System.EventHandler(this.toolStripMenuItem19_Click);
             // 
             // toolStripMenuItem20
             // 
             this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem20.Text = "Creator";
+            this.toolStripMenuItem20.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem20.Text = "Developer";
             this.toolStripMenuItem20.Click += new System.EventHandler(this.toolStripMenuItem20_Click);
             // 
             // metroTabPage5
@@ -760,6 +823,24 @@
             this.sd_DetectShapeButt.Text = "Detect Shape";
             this.sd_DetectShapeButt.UseSelectable = true;
             this.sd_DetectShapeButt.Click += new System.EventHandler(this.sd_DetectShapeButt_Click);
+            // 
+            // sd_imgOutputPicBox
+            // 
+            this.sd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.sd_imgOutputPicBox.Name = "sd_imgOutputPicBox";
+            this.sd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.sd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sd_imgOutputPicBox.TabIndex = 14;
+            this.sd_imgOutputPicBox.TabStop = false;
+            // 
+            // sd_imgInputPicBox
+            // 
+            this.sd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.sd_imgInputPicBox.Name = "sd_imgInputPicBox";
+            this.sd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.sd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sd_imgInputPicBox.TabIndex = 13;
+            this.sd_imgInputPicBox.TabStop = false;
             // 
             // menuStrip5
             // 
@@ -823,15 +904,15 @@
             // toolStripMenuItem47
             // 
             this.toolStripMenuItem47.Name = "toolStripMenuItem47";
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem47.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem47.Text = "How To?";
             this.toolStripMenuItem47.Click += new System.EventHandler(this.toolStripMenuItem47_Click);
             // 
             // toolStripMenuItem48
             // 
             this.toolStripMenuItem48.Name = "toolStripMenuItem48";
-            this.toolStripMenuItem48.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem48.Text = "Creator";
+            this.toolStripMenuItem48.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem48.Text = "Developer";
             this.toolStripMenuItem48.Click += new System.EventHandler(this.toolStripMenuItem48_Click);
             // 
             // metroTabPage6
@@ -876,6 +957,24 @@
             this.td_DetectTextButt.Text = "Detect Text";
             this.td_DetectTextButt.UseSelectable = true;
             this.td_DetectTextButt.Click += new System.EventHandler(this.td_DetectTextButt_Click);
+            // 
+            // td_imgOutputPicBox
+            // 
+            this.td_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.td_imgOutputPicBox.Name = "td_imgOutputPicBox";
+            this.td_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.td_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.td_imgOutputPicBox.TabIndex = 17;
+            this.td_imgOutputPicBox.TabStop = false;
+            // 
+            // td_imgInputPicBox
+            // 
+            this.td_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.td_imgInputPicBox.Name = "td_imgInputPicBox";
+            this.td_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.td_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.td_imgInputPicBox.TabIndex = 16;
+            this.td_imgInputPicBox.TabStop = false;
             // 
             // menuStrip6
             // 
@@ -939,15 +1038,15 @@
             // toolStripMenuItem49
             // 
             this.toolStripMenuItem49.Name = "toolStripMenuItem49";
-            this.toolStripMenuItem49.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem49.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem49.Text = "How To?";
             this.toolStripMenuItem49.Click += new System.EventHandler(this.toolStripMenuItem49_Click);
             // 
             // toolStripMenuItem50
             // 
             this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem50.Text = "Creator";
+            this.toolStripMenuItem50.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem50.Text = "Developer";
             this.toolStripMenuItem50.Click += new System.EventHandler(this.toolStripMenuItem50_Click);
             // 
             // metroTabPage7
@@ -992,6 +1091,24 @@
             this.fd_detectFaceButt.Text = "Detect Face";
             this.fd_detectFaceButt.UseSelectable = true;
             this.fd_detectFaceButt.Click += new System.EventHandler(this.fd_detectFaceButt_Click);
+            // 
+            // fd_imgOutputPicBox
+            // 
+            this.fd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
+            this.fd_imgOutputPicBox.Name = "fd_imgOutputPicBox";
+            this.fd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.fd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fd_imgOutputPicBox.TabIndex = 20;
+            this.fd_imgOutputPicBox.TabStop = false;
+            // 
+            // fd_imgInputPicBox
+            // 
+            this.fd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
+            this.fd_imgInputPicBox.Name = "fd_imgInputPicBox";
+            this.fd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
+            this.fd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fd_imgInputPicBox.TabIndex = 19;
+            this.fd_imgInputPicBox.TabStop = false;
             // 
             // menuStrip7
             // 
@@ -1055,15 +1172,15 @@
             // toolStripMenuItem51
             // 
             this.toolStripMenuItem51.Name = "toolStripMenuItem51";
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem51.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem51.Text = "How To?";
             this.toolStripMenuItem51.Click += new System.EventHandler(this.toolStripMenuItem51_Click);
             // 
             // toolStripMenuItem52
             // 
             this.toolStripMenuItem52.Name = "toolStripMenuItem52";
-            this.toolStripMenuItem52.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem52.Text = "Creator";
+            this.toolStripMenuItem52.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem52.Text = "Developer";
             this.toolStripMenuItem52.Click += new System.EventHandler(this.toolStripMenuItem52_Click);
             // 
             // metroTabPage8
@@ -1140,133 +1257,16 @@
             // toolStripMenuItem53
             // 
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(120, 22);
+            this.toolStripMenuItem53.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem53.Text = "How To?";
             this.toolStripMenuItem53.Click += new System.EventHandler(this.toolStripMenuItem53_Click);
             // 
             // toolStripMenuItem54
             // 
             this.toolStripMenuItem54.Name = "toolStripMenuItem54";
-            this.toolStripMenuItem54.Size = new System.Drawing.Size(120, 22);
-            this.toolStripMenuItem54.Text = "Creator";
+            this.toolStripMenuItem54.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem54.Text = "Developer";
             this.toolStripMenuItem54.Click += new System.EventHandler(this.toolStripMenuItem54_Click);
-            // 
-            // ed_imgOutputPicBox
-            // 
-            this.ed_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
-            this.ed_imgOutputPicBox.Name = "ed_imgOutputPicBox";
-            this.ed_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.ed_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ed_imgOutputPicBox.TabIndex = 5;
-            this.ed_imgOutputPicBox.TabStop = false;
-            // 
-            // ed_imgInputPicBox
-            // 
-            this.ed_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.ed_imgInputPicBox.Name = "ed_imgInputPicBox";
-            this.ed_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.ed_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ed_imgInputPicBox.TabIndex = 4;
-            this.ed_imgInputPicBox.TabStop = false;
-            // 
-            // ib_imgOutputPicBox
-            // 
-            this.ib_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
-            this.ib_imgOutputPicBox.Name = "ib_imgOutputPicBox";
-            this.ib_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.ib_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ib_imgOutputPicBox.TabIndex = 8;
-            this.ib_imgOutputPicBox.TabStop = false;
-            // 
-            // ib_imgInputPicBox
-            // 
-            this.ib_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.ib_imgInputPicBox.Name = "ib_imgInputPicBox";
-            this.ib_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.ib_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ib_imgInputPicBox.TabIndex = 7;
-            this.ib_imgInputPicBox.TabStop = false;
-            // 
-            // ih_imgInputPicBox
-            // 
-            this.ih_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.ih_imgInputPicBox.Name = "ih_imgInputPicBox";
-            this.ih_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.ih_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ih_imgInputPicBox.TabIndex = 10;
-            this.ih_imgInputPicBox.TabStop = false;
-            // 
-            // m_imgOutputPicBox
-            // 
-            this.m_imgOutputPicBox.Location = new System.Drawing.Point(580, 27);
-            this.m_imgOutputPicBox.Name = "m_imgOutputPicBox";
-            this.m_imgOutputPicBox.Size = new System.Drawing.Size(408, 437);
-            this.m_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.m_imgOutputPicBox.TabIndex = 13;
-            this.m_imgOutputPicBox.TabStop = false;
-            // 
-            // m_imgInputPicBox
-            // 
-            this.m_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.m_imgInputPicBox.Name = "m_imgInputPicBox";
-            this.m_imgInputPicBox.Size = new System.Drawing.Size(406, 437);
-            this.m_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.m_imgInputPicBox.TabIndex = 12;
-            this.m_imgInputPicBox.TabStop = false;
-            // 
-            // sd_imgOutputPicBox
-            // 
-            this.sd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
-            this.sd_imgOutputPicBox.Name = "sd_imgOutputPicBox";
-            this.sd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.sd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.sd_imgOutputPicBox.TabIndex = 14;
-            this.sd_imgOutputPicBox.TabStop = false;
-            // 
-            // sd_imgInputPicBox
-            // 
-            this.sd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.sd_imgInputPicBox.Name = "sd_imgInputPicBox";
-            this.sd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.sd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.sd_imgInputPicBox.TabIndex = 13;
-            this.sd_imgInputPicBox.TabStop = false;
-            // 
-            // td_imgOutputPicBox
-            // 
-            this.td_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
-            this.td_imgOutputPicBox.Name = "td_imgOutputPicBox";
-            this.td_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.td_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.td_imgOutputPicBox.TabIndex = 17;
-            this.td_imgOutputPicBox.TabStop = false;
-            // 
-            // td_imgInputPicBox
-            // 
-            this.td_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.td_imgInputPicBox.Name = "td_imgInputPicBox";
-            this.td_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.td_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.td_imgInputPicBox.TabIndex = 16;
-            this.td_imgInputPicBox.TabStop = false;
-            // 
-            // fd_imgOutputPicBox
-            // 
-            this.fd_imgOutputPicBox.Location = new System.Drawing.Point(531, 27);
-            this.fd_imgOutputPicBox.Name = "fd_imgOutputPicBox";
-            this.fd_imgOutputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.fd_imgOutputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.fd_imgOutputPicBox.TabIndex = 20;
-            this.fd_imgOutputPicBox.TabStop = false;
-            // 
-            // fd_imgInputPicBox
-            // 
-            this.fd_imgInputPicBox.Location = new System.Drawing.Point(3, 27);
-            this.fd_imgInputPicBox.Name = "fd_imgInputPicBox";
-            this.fd_imgInputPicBox.Size = new System.Drawing.Size(457, 437);
-            this.fd_imgInputPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.fd_imgInputPicBox.TabIndex = 19;
-            this.fd_imgInputPicBox.TabStop = false;
             // 
             // Menu
             // 
@@ -1284,49 +1284,49 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ed_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ed_imgInputPicBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).EndInit();
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).EndInit();
             this.menuStrip4.ResumeLayout(false);
             this.menuStrip4.PerformLayout();
             this.metroTabPage5.ResumeLayout(false);
             this.metroTabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).EndInit();
             this.menuStrip5.ResumeLayout(false);
             this.menuStrip5.PerformLayout();
             this.metroTabPage6.ResumeLayout(false);
             this.metroTabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).EndInit();
             this.menuStrip6.ResumeLayout(false);
             this.menuStrip6.PerformLayout();
             this.metroTabPage7.ResumeLayout(false);
             this.metroTabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).EndInit();
             this.menuStrip7.ResumeLayout(false);
             this.menuStrip7.PerformLayout();
             this.metroTabPage8.ResumeLayout(false);
             this.metroTabPage8.PerformLayout();
             this.menuStrip8.ResumeLayout(false);
             this.menuStrip8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ed_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ed_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ib_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ib_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ih_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sd_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sd_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.td_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.td_imgInputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fd_imgOutputPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fd_imgInputPicBox)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -29,7 +29,7 @@
     <ProductName>Emgu World</ProductName>
     <PublisherName>Omar Belghaouti</PublisherName>
     <SuiteName>Omar Belghaouti</SuiteName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -147,9 +147,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Emgu World_TemporaryKey.pfx" />
-    <None Include="hand.svm">
+    <Content Include="hand.svm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -172,28 +172,60 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Dtafalonso-Android-Lollipop-Earth.ico" />
-    <Content Include="LBPcascade classifiers\lbpcascade_frontalface.xml" />
+    <Content Include="LBPcascade classifiers\lbpcascade_frontalface.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="msvcp140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="opencv_ffmpeg343_64.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Slides\2017-07-p-1-73-960x720.jpg" />
-    <Content Include="Slides\Beringovsky-fishing-houses-of-the-local-people-on-the-lagoon-960x720.jpg" />
-    <Content Include="Slides\home_eco_blog5-960x720.jpg" />
-    <Content Include="Slides\IMG_5077-960x720.jpg" />
-    <Content Include="Slides\In Fields of Clover.jpg" />
-    <Content Include="Slides\landscaping-sydney-garden-960x720.jpg" />
-    <Content Include="Slides\summer-landscaping-sydney-960x720.jpg" />
-    <Content Include="Tile Images\edgeDetection.PNG" />
-    <Content Include="Tile Images\faceDetection.PNG" />
-    <Content Include="Tile Images\handDetection.PNG" />
-    <Content Include="Tile Images\imageBinarization.PNG" />
-    <Content Include="Tile Images\imageHistogram.PNG" />
-    <Content Include="Tile Images\morphology.PNG" />
-    <Content Include="Tile Images\shapeDetection.PNG" />
-    <Content Include="Tile Images\textDetection.PNG" />
+    <Content Include="Slides\2017-07-p-1-73-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\Beringovsky-fishing-houses-of-the-local-people-on-the-lagoon-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\home_eco_blog5-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\IMG_5077-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\In Fields of Clover.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\landscaping-sydney-garden-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slides\summer-landscaping-sydney-960x720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\edgeDetection.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\faceDetection.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\handDetection.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\imageBinarization.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\imageHistogram.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\morphology.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\shapeDetection.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tile Images\textDetection.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -211,7 +243,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="users.mdb">
+    <PublishFile Include="LBPcascade classifiers\lbpcascade_frontalface.xml">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -220,6 +252,16 @@
       <PublishState>Include</PublishState>
       <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="netfx.force.conflicts">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
